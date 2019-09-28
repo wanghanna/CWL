@@ -3,7 +3,7 @@
     <div>
     <vs-breadcrumb
       :items="item"
-      class="break position-fixed"
+      class="break"
       separator="•"
     ></vs-breadcrumb>
     <br id="a1" /><br /><br /><br /><br />
