@@ -20,7 +20,9 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import { faGooglePlus } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import vueToTop from 'vue-totop'
 
+Vue.use(vueToTop)
 library.add(faCoffee, faGooglePlus);
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 

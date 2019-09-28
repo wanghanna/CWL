@@ -1,6 +1,6 @@
 <template>
   <div id="about" class="about container-fluid">
-    <div class="sticky-top">
+    <div class="">
       <vs-breadcrumb :items="item" separator="chevron_right"></vs-breadcrumb>
       <!-- light-navbar -->
       <div>

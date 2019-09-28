@@ -2,6 +2,8 @@
   <div id="app" class="container-fluid">
     <!-- navbar -->
     <navbar class="sticky-top" style="z-index:9999" />
+    <!-- top -->
+    <vueToTop type=11 size=50 style="z-index:9999"></vueToTop>
     <!-- content -->
     <router-view />
     <!-- footer -->
