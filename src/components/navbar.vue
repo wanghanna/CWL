@@ -13,10 +13,10 @@
           <router-link to="/"
             ><img
               src="../assets/LOGO_Lamp.svg"
-              width="50px"
+              width="50vh"
               class="mt-1"/></router-link
           >&nbsp;
-          <span style="color:#ffffff">ChenWeiLighting</span>
+          <span style="color:#ffffff" class="d-none d-md-inline-flex">ChenWeiLighting</span>
         </vs-navbar-title>
       </div>
       <vs-navbar-item index="0">
