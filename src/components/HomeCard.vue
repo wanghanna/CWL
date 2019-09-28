@@ -8,7 +8,7 @@
         <h3>
           Hello world !
         </h3>
-        <div><img src="../assets/logo.png" alt=""></div>
+        <div><img src="../assets/logo.png" width="100vh"></div>
       </div>
       <div>
         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
@@ -31,7 +31,7 @@
         <h3>
           Hello world !
         </h3>
-        <div><img src="../assets/logo.png" alt=""></div>
+        <div><img src="../assets/logo.png" width="100vh" alt=""></div>
       </div>
       <div>
         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
@@ -54,7 +54,7 @@
         <h3>
           Hello world !
         </h3>
-        <div><img src="../assets/logo.png" alt=""></div>
+        <div><img src="../assets/logo.png" width="100vh" alt=""></div>
       </div>
       <div>
         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
@@ -77,7 +77,7 @@
         <h3>
           Hello world !
         </h3>
-        <div><img src="../assets/logo.png" alt=""></div>
+        <div><img src="../assets/logo.png" width="100vh" alt=""></div>
       </div>
       <div>
         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
