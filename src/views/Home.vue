@@ -1,13 +1,13 @@
 <template>
   <div id="front" class="m-0 row flex-column justify-content-center vh-100">
-    <div class="in vh-100">
-      <div class="ml-5 col col-md-6 mt-5 pt-5">
+    <div class="in vh-100 container-fluid row m-0 m-0d-none d-md-block">
+      <div class="po vh-100">
         <br /><br /><br /><br /><br /><br />
-        <h1 class="chip size80">辰偉照明</h1>
-        <p class="chip size30 mb-4">
+        <h1 class="chip size80"><router-link to="/idx">辰偉照明</router-link></h1>
+        <p class="chip size30 mt-5">
           CHEN WEI LIGHTING CO., LTD
         </p>
-        <h3 class="chip subheading text-start">offer the best service!</h3>
+        <p class="chip size16 subheading">offer the best service!</p>
       </div>
     </div>
   </div>
@@ -20,23 +20,30 @@
   overflow: hidden;
   font-family: "Noto Sans TC", sans-serif;
 }
+.po{
+  position:absolute;
+  left:10%;
+  top:20%;
+}
 .in {
   background-image: linear-gradient(-20deg, #252439da 45%, #ebebeb1c 60%);
   /* background-image: linear-gradient(-20deg, #25243931 50%, #ebebeb00 50%); */
   background-attachment: fixed;
+  /* position:relative; */
 }
 .size80 {
-  font-size: 22vh;
+  font-size: 8vw;
   text-align: start;
+}
+
+.size30 {
+  font-size: 2.5vw;
+  font-weight: bolder;
+  text-align: center;
 }
 .size16 {
-  font-size: 10vh;
-  text-align: start;
-}
-.size30 {
-  font-size: 5vh;
-  font-weight: bolder;
-  text-align: start;
+  font-size: 1.5vw;
+  text-align: end;
 }
 
 .chip {
@@ -48,9 +55,10 @@
   -webkit-text-fill-color: transparent;
   /* background: linear-gradient(20deg, #252439 50%, #ebebeb 50%); */
   /* background: linear-gradient(#252439 50%, #ebebeb 50%); */
-  background: linear-gradient(#ebebeb 45%, #252439 50%);
+  background: linear-gradient(#ebebeb 45%, #252439 48%, #ebebeb 60%, #252439 65%);
   background-attachment: fixed;
   -webkit-background-clip: text;
+  filter:drop-shadow( 0 0 2px rgb(41, 41, 41))
 }
 #front::before {
   content: "";
