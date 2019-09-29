@@ -7,7 +7,7 @@
       paginationActiveColor="#268893"
       :autoplayTimeout=3000
       :navigationEnabled = true
-      :paginationSize = 15
+      :paginationSize = 10
     >
       <slide>
         <img src="../assets/1_HBO_XBO.jpg" width="100%" />
