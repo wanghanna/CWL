@@ -12,11 +12,11 @@ self.__precacheManifest = [
     "url": "robots.txt"
   },
   {
-    "revision": "4d34fdd05f91018f61d2",
-    "url": "js/app.22921a96.js"
+    "revision": "c0ca8ffb01058e6cad30",
+    "url": "js/app.e5a03de5.js"
   },
   {
-    "revision": "e21630214303e038d15616fc9515f161",
+    "revision": "073184047ce234518b56ae7b9baf6dd5",
     "url": "index.html"
   },
   {
@@ -72,16 +72,16 @@ self.__precacheManifest = [
     "url": "img/img/4-5.JPG"
   },
   {
-    "revision": "4ab9fbe36b01348e7d816358bf22ec9b",
-    "url": "img/img/4-10.JPG"
+    "revision": "d59443d01aaa4867ee1ce00d1b4fab7c",
+    "url": "img/img/4-4.JPG"
   },
   {
     "revision": "c17f7924c05b0ee5598b0e924fd80269",
     "url": "img/as2_philips.c17f7924.png"
   },
   {
-    "revision": "d59443d01aaa4867ee1ce00d1b4fab7c",
-    "url": "img/img/4-4.JPG"
+    "revision": "4ab9fbe36b01348e7d816358bf22ec9b",
+    "url": "img/img/4-10.JPG"
   },
   {
     "revision": "fdcf79ccc0a284e692387a48bb9412ec",
@@ -96,12 +96,12 @@ self.__precacheManifest = [
     "url": "img/img/4-2.JPG"
   },
   {
-    "revision": "159bb36104668233628ffec9d182df3a",
-    "url": "img/img/4-6.JPG"
-  },
-  {
     "revision": "70248afb43b866906d0bed1f90f56e99",
     "url": "img/img/4-3.JPG"
+  },
+  {
+    "revision": "159bb36104668233628ffec9d182df3a",
+    "url": "img/img/4-6.JPG"
   },
   {
     "revision": "6d12d6cfab6877599cc7cb40aaf2ab61",
@@ -116,8 +116,8 @@ self.__precacheManifest = [
     "url": "img/as2_ge.a68c2a23.png"
   },
   {
-    "revision": "3f681e89e0944361079a7ac012efe6e6",
-    "url": "css/ftCFont.css"
+    "revision": "29b882f018fa6fe75fd338aaae6235b8",
+    "url": "fonts/MaterialIcons-Regular.29b882f0.woff"
   },
   {
     "revision": "81e0b503b560a07ee9ad",
@@ -132,12 +132,12 @@ self.__precacheManifest = [
     "url": "img/1_HBO_XBO.19d4a378.jpg"
   },
   {
-    "revision": "8d0cd47016cd19666a1199a7453ed8a5",
-    "url": "css/logoFont.css"
-  },
-  {
     "revision": "61a99e5aea659b83ef84efab4faea8df",
     "url": "img/5_低壓鈉燈.61a99e5a.jpg"
+  },
+  {
+    "revision": "8d0cd47016cd19666a1199a7453ed8a5",
+    "url": "css/logoFont.css"
   },
   {
     "revision": "d7135ce85531fbe5a07c4b27acec073b",
@@ -148,8 +148,8 @@ self.__precacheManifest = [
     "url": "fonts/MaterialIcons-Regular.d120c85b.ttf"
   },
   {
-    "revision": "29b882f018fa6fe75fd338aaae6235b8",
-    "url": "fonts/MaterialIcons-Regular.29b882f0.woff"
+    "revision": "3f681e89e0944361079a7ac012efe6e6",
+    "url": "css/ftCFont.css"
   },
   {
     "revision": "36846f9cd161b3cc901863a136ad62c5",
@@ -176,12 +176,12 @@ self.__precacheManifest = [
     "url": "img/LOGO_Lamp.688f0a4f.svg"
   },
   {
-    "revision": "f9d890fa3ab2f23675256c1700c5ed60",
-    "url": "css/app.css"
+    "revision": "c0ca8ffb01058e6cad30",
+    "url": "css/app.edbe4efc.css"
   },
   {
-    "revision": "4d34fdd05f91018f61d2",
-    "url": "css/app.a4d55a4f.css"
+    "revision": "f9d890fa3ab2f23675256c1700c5ed60",
+    "url": "css/app.css"
   },
   {
     "revision": "8d5af407b2cf49d84d93",
