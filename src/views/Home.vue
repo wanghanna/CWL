@@ -1,13 +1,21 @@
 <template>
   <div id="front" class="m-0 row flex-column justify-content-center vh-100">
     <div class="in vh-100 container-fluid row m-0 m-0d-none d-md-block">
-      <div class="po vh-100">
+      <div class="po vh-100 d-none d-md-block">
         <br /><br /><br /><br /><br /><br />
         <h1 class="chip size80"><router-link to="/idx">辰偉照明</router-link></h1>
         <p class="chip size30 mt-5">
           CHEN WEI LIGHTING CO., LTD
         </p>
         <p class="chip size16 subheading">offer the best service!</p>
+      </div>
+            <div class="po vh-100 text-light d-md-none">
+        <br /><br /><br /><br /><br /><br />
+        <h1 class="size80"><router-link class="idx" style="text-decoration:none" to="/idx">辰偉照明</router-link></h1>
+        <p class="size30 mt-5">
+          CHEN WEI LIGHTING CO., LTD
+        </p>
+        <p class="size16 subheading">offer the best service!</p>
       </div>
     </div>
   </div>
@@ -34,6 +42,14 @@
 .size80 {
   font-size: 8vw;
   text-align: start;
+}
+.idx{
+  color:white;
+}
+.idx:hover{
+  font-size:9vh;
+  color:#232439;
+  transition: 2s;
 }
 
 .size30 {
