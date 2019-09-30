@@ -4,13 +4,13 @@
 <svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
 <g>
-	<circle fill="#0E0F14" cx="150" cy="150" r="145.333"/>
+	<circle fill="none" cx="150.001" cy="150" r="197.333"/>
 </g>
 <g>
 	
-		<line fill="none" stroke="#D8D8D8" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="105.476" y1="194.402" x2="158.005" y2="194.402"/>
-	<path fill="none" stroke="#D8D8D8" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-		M132.49,226.008h35.021c0,0-17.513,18.7-17.513,18.699c0,0-75.253-72.595-75.253-114.159c0-41.562,33.692-75.255,75.261-75.255
-		c41.559,0,75.251,33.695,75.251,75.255c0,16.506-11.872,37.911-26.186,57.715"/>
+		<line fill="none" stroke="#212121" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="87.356" y1="212.474" x2="161.263" y2="212.474"/>
+	<path fill="none" stroke="#212121" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M125.365,256.942h49.271c0,0-24.64,26.309-24.64,26.308c0,0-105.878-102.138-105.878-160.617
+		c0-58.476,47.405-105.882,105.889-105.882c58.47,0,105.876,47.409,105.876,105.882c0,23.223-16.704,53.339-36.841,81.203"/>
 </g>
 </svg>
