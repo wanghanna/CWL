@@ -1,5 +1,5 @@
 <template>
-  <div id="about" class="about container-fluid">
+  <div id="about" class="about container-fluid" style="background:#fff">
     <div class="">
       <vs-breadcrumb :items="item" separator="chevron_right"></vs-breadcrumb>
       <!-- light-navbar -->

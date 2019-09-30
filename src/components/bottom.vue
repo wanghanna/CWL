@@ -8,7 +8,7 @@
 </template>
 <style scoped>
 #bottom {
-  background: rgb(32, 126, 137);
+  background: rgb(0, 0, 0);
   color: #fff;
   /* box-shadow:inset 0 0 10px azure; */
   font-family: "Teko", sans-serif;

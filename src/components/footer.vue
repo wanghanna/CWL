@@ -4,7 +4,7 @@
       <div class="col">
         <h6><b>CHEN WEI LIGHTING</b></h6>
         <hr />
-        <div style="text-align:start">
+        <div style="text-align:start;">
           <img src="../assets/LOGO_Lamp.svg" width="100px" />
         </div>
         <p>服務範圍: 全台各區</p>
@@ -35,17 +35,18 @@
 <style scoped>
 .main {
   padding: 45px;
-  background: #16b1b5;
+  background: #d9e1e8;
+  background-attachment:fixed;
 }
 h6 {
-  color: #207e89;
+  color: #282c37;
   font-family: "Teko", sans-serif;
   font-size: 20px;
   text-align: start;
 }
 p {
   font-family: "Noto Sans TC", sans-serif;
-  color: #ebebeb;
+  color: #52616a;
   text-align: start;
 }
 #map {

@@ -1,5 +1,5 @@
 <template>
-<div>
+<div style="background:#fff">
     <vs-breadcrumb :items="item" separator="chevron_right" class="font"></vs-breadcrumb>
   <div class="home d-flex flex-column align-items-center px-5">
     <HelloWorld />

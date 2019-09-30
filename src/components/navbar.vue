@@ -3,7 +3,7 @@
     <vs-navbar
       v-model="activeItem"
       class="nabarx p-1 row m-0"
-      color="rgba(255,255,255,0.1)"
+      color="white"
       text-color="#989BAC"
       active-text-color="rgba(255,255,255,1)"
       index="danger"
@@ -16,7 +16,7 @@
               src="../assets/LOGO_Lamp.svg"
               class="mt-1 d-none d-md-inline-flex"/></router-link
           >&nbsp;
-          <span style="color:yellow">ChenWeiLighting</span>
+          <span style="color:black">ChenWeiLighting</span>
         </vs-navbar-title>
       </div>
       <div id="menu" class="row m-0">
@@ -61,7 +61,6 @@
 #logo-t{
   width:55px;
   height:55px;
-  background:rgb(255, 255, 255);
   /* box-shadow:inset 0 0 10px rgb(146, 146, 146); */
   padding:5px;
   border-radius:50%;
