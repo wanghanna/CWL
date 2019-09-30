@@ -2,10 +2,15 @@
   <div id="app" class="container-fluid m-0 p-0 ">
     <!-- navbar -->
     <navbar class="sticky-top d-lg-none"/>
+    <div class="fixed-top pt-2 px-3 d-none d-lg-block" style="text-align:end">
+      <a href="tel:+886-7-2382383"><eva-icon name="phone" fill="#8892B0" class="mx-3" title="07-2382383"></eva-icon></a>
+      <eva-icon name="printer" fill="#8892B0" class="mx-3" title="07-2382385"></eva-icon>
+      <eva-icon name="email" fill="#8892B0" class="mx-3"></eva-icon>
+    </div>
     <!-- top -->
     <vueToTop type=10 size=50 color="#000" top=100 style="z-index:9999"></vueToTop>
     <!-- content -->
-    <div class="row m-0 nowrap mt-lg-3">
+    <div class="row m-0 nowrap mt-lg-5">
     <div id="menu" style="box-shadow:0 0 5px #B8C6C6;background:#fff;text-align:start;" class="row flex-column d-none d-lg-inline-block p-3 ml-3">
         <router-link to="/idx" style="font-size:12px;color:black" class="m-5"><div style="white-space:nowrap"><eva-icon name="home" fill="#8892B0"></eva-icon><span class="pl-3">Home</span></div></router-link>
         <router-link to="/about" style="font-size:12px;color:black" class="m-5"><div style="white-space:nowrap"><eva-icon name="briefcase" fill="#8892B0"></eva-icon><span class="pl-3">About US</span></div></router-link>
