@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="container-fluid m-0 p-0" style="background:#172A3B">
     <!-- navbar -->
-    <!-- <navbar class="fixed-top"/> -->
+    <navbar class="fixed-top"/>
     <!-- top -->
     <vueToTop type=10 size=50 color="#207E89" top=100 style="z-index:9999"></vueToTop>
     <!-- content -->
