@@ -1,5 +1,7 @@
 <template>
   <div id="front" class="vh-100 vw-100 d-flex justify-content-center">
+
+
     <router-link to="/idx"></router-link>
     <div id="imgb" class="d-xl-flex d-none"><img src="../assets/LOGO_Lamp.svg" alt=""></div>
     <div id="imgt" class="d-xl-none d-flex"><img src="../assets/LOGO_Lamp.svg" alt=""></div>
@@ -21,13 +23,6 @@
   position:absolute;
   top:18%;
 }
-#imgt img{
-  width:100vh;
-  position:absolute;
-  left:35%;
-  top:18%;
-  opacity:0.2
-}
 @keyframes imgb{
   from{
     right:100%;
@@ -40,6 +35,14 @@
     opacity:0.6;
   }
 }
+#imgt img{
+  width:100vh;
+  position:absolute;
+  left:35%;
+  top:18%;
+  opacity:0.2
+}
+
 #title{
   position:absolute;
   top:30%;
@@ -82,9 +85,9 @@
 #cwlc h1{
   z-index:2;
   color:#33322D;
-  font-size:10vh;
+  font-size:8vh;
   font-weight:bolder;
-  font-family: "Noto Sans TC", sans-serif;
+  font-family: 'Syncopate';
 }
 
 

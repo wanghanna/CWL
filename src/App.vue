@@ -1,7 +1,9 @@
 <template>
   <div id="app" class="vw-100">
     <!-- navbar -->
-    <navbar class="" style="" />
+
+     <navbar class="" style="" />
+
     <!-- top -->
     <vueToTop type=10 size=50 color="#1D1F29" top=100 style="z-index:9999"></vueToTop>
     <!-- content -->
@@ -14,10 +16,12 @@
 </template>
 
 <style>
+
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 </style>
 <script>
@@ -37,6 +41,8 @@ export default {
     navbar,
     ft,
     bot
-  }
+
+
+}
 };
 </script>

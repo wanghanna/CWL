@@ -2,13 +2,13 @@
   <div class="container-fluid main row flex-column flex-md-row mb-2 m-0">
     <div class="container-fluid col-md-8 row flex-column flex-md-row m-0">
       <div class="col">
-        <h6><b>CHEN WEI LIGHTING</b></h6>
+        <h6 style="font-family: 'Noto Sans TC', sans-serif;"><b>辰偉照明</b></h6>
         <hr />
         <div style="text-align:start">
           <img src="../assets/LOGO_Lamp.svg" width="100px" />
         </div>
         <p>服務範圍: 全台各區</p>
-        <vs-button color="#207e89" size="large" type="filled" icon="input" @click ="go"></vs-button>
+        <vs-button color="#33322e" size="large" type="flat" icon="input" @click ="go"></vs-button>
       </div>
       <div class="col">
         <h6><b>ADDRESS</b></h6>
@@ -37,14 +37,14 @@
   padding: 45px;
 }
 h6 {
-  color: #3ACEDD;
+  color: #1F1F1E;
   font-family: "Teko", sans-serif;
   font-size: 20px;
   text-align: start;
 }
 p {
   font-family: "Noto Sans TC", sans-serif;
-  color: #1F1F1E;
+  color: #7C7B79;
   text-align: start;
 }
 #map {
