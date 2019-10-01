@@ -28,24 +28,23 @@
       </div>
     </div>
     <div class="col">
-      <img id="map" src="../assets/map.png" alt="" />
+      <!-- <img id="map" src="../assets/map.png" alt="" /> -->
     </div>
   </div>
 </template>
 <style scoped>
 .main {
   padding: 45px;
-  background: #16b1b5;
 }
 h6 {
-  color: #207e89;
+  color: #3ACEDD;
   font-family: "Teko", sans-serif;
   font-size: 20px;
   text-align: start;
 }
 p {
   font-family: "Noto Sans TC", sans-serif;
-  color: #ebebeb;
+  color: #1F1F1E;
   text-align: start;
 }
 #map {

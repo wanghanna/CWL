@@ -1,15 +1,15 @@
 <template>
-  <div id="app" class="container-fluid">
+  <div id="app" class="vw-100">
     <!-- navbar -->
-    <navbar class="sticky-top" style="z-index:9999" />
+    <navbar class="" style="" />
     <!-- top -->
-    <vueToTop type=10 size=50 color="#207E89" top=100 style="z-index:9999"></vueToTop>
+    <vueToTop type=10 size=50 color="#1D1F29" top=100 style="z-index:9999"></vueToTop>
     <!-- content -->
     <router-view />
     <!-- footer -->
     <ft />
     <!-- bottom -->
-    <bot class="fixed-bottom" />
+    <bot class="" />
   </div>
 </template>
 
@@ -18,8 +18,6 @@
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
 }
 </style>
 <script>
