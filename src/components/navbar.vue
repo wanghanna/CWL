@@ -1,16 +1,18 @@
 <template>
-  <div id="navbart" class="my-3" >
-    <div class=" row m-0">
-      <div class="col mr-auto mx-5">
-        <router-link to="/"><span class="mr-3"><img src="../assets/LOGO_Lamp.svg" style="width:50px"></span></router-link>
-        <span>辰偉照明</span></div>
-      <div id="menu" class="d-none d-md-flex">
-        <router-link to="/idx"><span class="mx-2 buttonOverlay">Home</span></router-link>
-        <router-link to="/about"><span class="mx-2 buttonOverlay">Company</span></router-link>
-        <router-link to="/light"><span class="mx-2 buttonOverlay">Product</span></router-link>
-        <router-link to="/knowledge"><span class="ml-2 mr-5 buttonOverlay">About light</span></router-link>
+  <div id="navbart" class="container-fluid m-0 p-0" >
+    <vs-navbar class="nabarx" style="background:#fff">
+      <div slot="title">
+      <vs-navbar-title class="row m-0 px-5 align-items-center">
+        <router-link to="/"><span><img src="../assets/LOGO_Lamp.svg" style="width:50px" class="d-none d-md-flex mx-3"></span></router-link>
+        <span>辰偉照明</span></vs-navbar-title>
+        </div>
+      <div id="menu" class="row m-0">
+        <vs-navbar-item index="0"><router-link to="/idx"><span class="mx-2 buttonOverlay">Home</span></router-link></vs-navbar-item>
+         <vs-navbar-item index="1"><router-link to="/about"><span class="mx-2 buttonOverlay">Company</span></router-link></vs-navbar-item>
+         <vs-navbar-item index="2"><router-link to="/light"><span class="mx-2 buttonOverlay">Product</span></router-link></vs-navbar-item>
+         <vs-navbar-item index="3"><router-link to="/knowledge"><span class="ml-2 mr-5 buttonOverlay">About light</span></router-link></vs-navbar-item>
       </div>
-    </div>
+    </vs-navbar>
   </div>
 </template>
 <style scoped>

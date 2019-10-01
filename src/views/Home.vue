@@ -82,9 +82,9 @@
 #cwlc h1{
   z-index:2;
   color:#33322D;
-  font-size:10vh;
+  font-size:8vh;
   font-weight:bolder;
-  font-family: "Noto Sans TC", sans-serif;
+  font-family: 'Syncopate';
 }
 
 
