@@ -1,15 +1,15 @@
 <template>
   <div id="app" class="vw-100">
     <!-- navbar -->
-    <navbar class="" style="" />
+    <navbar class="sticky-top" style="" />
     <!-- top -->
-    <vueToTop type=10 size=50 color="#1D1F29" top=100 style="z-index:9999"></vueToTop>
+    <vueToTop type=4 size=50 color="#1D1F29" top=100 bottom="5" right="10" style="z-index:9999"></vueToTop>
     <!-- content -->
-    <router-view />
+    <router-view class=""/>
     <!-- footer -->
     <ft />
     <!-- bottom -->
-    <bot class="" />
+    <bot class="fixed-bottom" />
   </div>
 </template>
 
