@@ -1,5 +1,5 @@
 <template>
-  <div id="about" class="about container-fluid">
+  <div id="light" class="about container-fluid">
     <div class="">
       <vs-breadcrumb :items="item" separator="chevron_right"></vs-breadcrumb>
       <!-- light-navbar -->
@@ -102,7 +102,7 @@
           </tr> -->
             <tr>
               <th>
-                <div id="title" class="row m-0 flex-column flex-md-row">
+                <div id="ltitle" class="row m-0 flex-column flex-md-row">
                   <div class="col">產品類別</div>
                   <div class="col">樣式</div>
                   <div class="col">名稱</div>
@@ -131,10 +131,10 @@
   </div>
 </template>
 <style>
-div {
+#light {
   font-family: "Noto Sans TC", sans-serif;
 }
-#title {
+#ltitle {
   background: #252439;
   color: #ebebeb;
   font-size: 15px;
@@ -146,7 +146,7 @@ table {
   width: 100%;
   margin-top: 50px;
 }
-td {
+table td {
   border-bottom: 1px solid rgb(165, 165, 165);
   padding-top: 50px;
   padding-bottom: 20px;

@@ -17,15 +17,15 @@
   animation-duration:3s;
   animation-fill-mode:forwards;
   animation-timing-function:cubic-bezier(0.215, 0.610, 0.355, 1);
-  width:90vh;
+  width:100vh;
   position:absolute;
-  top:15%;
+  top:18%;
 }
 #imgt img{
-  width:120vh;
+  width:100vh;
   position:absolute;
-  left:30%;
-  top:0%;
+  left:35%;
+  top:18%;
   opacity:0.2
 }
 @keyframes imgb{
@@ -35,7 +35,7 @@
     opacity:0;
   }
   to{
-    right:-10vw;
+    right:-15vw;
     transform:rotate(360deg);
     opacity:0.6;
   }
