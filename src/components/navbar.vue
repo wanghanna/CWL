@@ -15,7 +15,6 @@
 </template>
 <style scoped>
   #navbart{
-    box-shadow:inset 0 0px 5px #EDEAE5;
     height:50px;
     line-height:50px;
     font-family: "Noto Sans TC", sans-serif;
