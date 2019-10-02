@@ -25,7 +25,7 @@
     <h3 id="a31" class="mr-auto px-5">如何抵達</h3>
     <br>
     <div class="row flex-md-row flex-column m-0 justify-content-center align-items-center">
-      <vs-icon icon="commute" size="75px" color="#285E78" class="mr-3"></vs-icon>
+      <vs-icon icon="commute" size="75px" color="#32312D" class="mr-3"></vs-icon>
       <img src="../assets/map.png" alt="" />
     </div>
         <br><br><br>

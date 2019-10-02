@@ -105,7 +105,7 @@
 h3 {
   font-family: "Noto Sans TC", sans-serif;
   font-weight:bolder;
-  color:#3ACEDD
+  color:#33322E
 }
 .f1 {
   font-family: "Noto Sans TC", sans-serif;
