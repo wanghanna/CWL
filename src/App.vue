@@ -1,13 +1,13 @@
 <template>
-  <div id="app" class="vw-100">
+  <div id="app" class="vw-100 d-flex flex-column align-items-center">
     <!-- navbar -->
     <navbar class="sticky-top" style="" />
     <!-- top -->
     <vueToTop type=4 size=50 color="#1D1F29" top=100 bottom="5" right="10" style="z-index:9999"></vueToTop>
     <!-- content -->
-    <router-view class=""/>
+    <router-view style="width:90%"/>
     <!-- footer -->
-    <ft />
+    <ft/>
     <!-- bottom -->
     <bot class="fixed-bottom" />
   </div>

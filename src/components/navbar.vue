@@ -4,7 +4,7 @@
     <vs-navbar class="nabarx d-none d-md-flex pt-3" :style="navbarStyle">
       <div slot="title">
       <vs-navbar-title :class="titleClass">
-        <router-link to="/"><span><img id="timg" src="../assets/LOGO_Lamp.svg" style="width:50px" class="mx-3" title="辰偉照明" alt="ChenWeiLighting"></span></router-link>
+        <router-link to="/"><span><img src="../assets/LOGO_Lamp.svg" style="width:50px" class="mx-3 timg" title="辰偉照明" alt="ChenWeiLighting"></span></router-link>
         <span>辰偉照明</span></vs-navbar-title>
         </div>
       <div id="menu" class="row m-0">
@@ -15,11 +15,12 @@
       </div>
     </vs-navbar>
     <!-- 小尺寸 -->
-        <vs-navbar class="nabarx d-md-none pt-3" v-model="activeItem" :type="navbarType" :style="navbarStyle">
-      <div slot="title">
+        <vs-navbar class="nabarx d-md-none bg-secondary" v-model="activeItem" :type="navbarType" :style="navbarStyle">
+      <div slot="title" class="my-2">
       <vs-navbar-title :class="titleClass">
-        <router-link to="/"><span><img src="../assets/LOGO_Lamp.svg" style="width:50px" class="d-none"></span></router-link>
-        <span>辰偉照明</span></vs-navbar-title>
+        <span class="mr-2" style="color:#3ACEDD;font-weight:bolder;font-size:3vh">辰偉照明</span>
+        <router-link to="/"><span><img src="../assets/LOGO_Lamp.svg" style="width:50px;" class="timg"></span></router-link>
+        </vs-navbar-title>
         </div>
       <div id="menu" class="row m-0">
         <vs-navbar-item index="0"><router-link to="/idx"><span>Home</span></router-link></vs-navbar-item>
@@ -32,10 +33,10 @@
   </div>
 </template>
 <style scoped>
-#timg{
+.timg{
   transition:0.5s;
 }
-#timg:hover{
+.timg:hover{
   transform:scale(1.2);
   filter:invert(1)
 }
@@ -91,8 +92,8 @@ export default {
  data:()=>({
   activeItem: 0,
   navbarType: "shadow",
-  navbarStyle: "background:transparent;box-shadow:0 0 0 #fff",
-  titleClass: "row m-0 px-5 align-items-center",
+  navbarStyle: "background:#fff;box-shadow:0 0 0 #fff",
+  titleClass: "row m-0 px-4 align-items-center",
 })
 };
 </script>

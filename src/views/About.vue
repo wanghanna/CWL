@@ -1,6 +1,7 @@
 <template>
   <div>
-    <div>
+    <div class="row">
+      <vs-icon icon="fingerprint" size="medium" bg=""></vs-icon>
     <vs-breadcrumb
       :items="item"
       class="break"

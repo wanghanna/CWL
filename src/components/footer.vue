@@ -38,17 +38,19 @@
 </template>
 <style scoped>
 .main {
-  padding: 45px;
+  padding:100px 50px 150px 50px;
+  line-height:35px;
+  background:#C2C2C2
 }
 h6 {
-  color: #33322E;
+  color: #EBEBEB;
   font-family: "Teko", sans-serif;
   font-size: 20px;
   text-align: start;
 }
 p {
   font-family: "Noto Sans TC", sans-serif;
-  color: #1F1F1E;
+  color: #32312D;
   text-align: start;
 }
 #map {

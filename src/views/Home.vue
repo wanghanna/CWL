@@ -15,14 +15,15 @@
       <h1>LIGHTING</h1>
     </div>
     </div>
-    <div id="enter" style="position:absolute;left:50%"><a href="#/idx"><vs-icon icon="fingerprint" size="50px" bg=""></vs-icon></a></div>
+    <div class="enter d-none d-xl-flex" style="position:fixed;left:50%"><a href="#/idx"><vs-icon icon="fingerprint" size="50px" bg=""></vs-icon></a></div>
+    <div class="enter d-xl-none" style="position:absolute;left:50%"><a href="#/idx"><vs-icon icon="fingerprint" size="50px" bg=""></vs-icon></a></div>
   </div>
 </template>
 <style scoped>
-#enter a{
+.enter a{
   color:#33322E;
 }
-#enter{
+.enter{
   transition:1s;
   opacity:0;
   animation-name:enter;
@@ -31,7 +32,7 @@
   animation-duration:1s;
   animation-timing-function:cubic-bezier(.02,1.95,.95,-0.52)
 }
-#enter:hover{
+.enter:hover{
   transform:rotate(45deg)
 }
 @keyframes enter{
