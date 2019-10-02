@@ -3,20 +3,13 @@
     <router-link to="/idx"></router-link>
     <div id="imgb" class="d-xl-flex d-none"><img src="../assets/LOGO_Lamp.svg" alt=""></div>
     <div id="imgt" class="d-xl-none d-flex"><img src="../assets/LOGO_Lamp.svg" alt=""></div>
-    <div class="title position-fixed d-none d-xl-flex">
+        <div class="title">
     <div id="cwlc" class="row flex-column flex-md-row">
       <h1>CHEN WEI</h1>
       <h1>LIGHTING</h1>
     </div>
     </div>
-        <div class="title d-xl-none">
-    <div id="cwlc" class="row flex-column flex-md-row">
-      <h1>CHEN WEI</h1>
-      <h1>LIGHTING</h1>
-    </div>
-    </div>
-    <div class="enter d-none d-xl-flex" style="position:fixed;left:50%"><a href="#/idx"><vs-icon icon="fingerprint" size="50px" bg=""></vs-icon></a></div>
-    <div class="enter d-xl-none" style="position:absolute;left:50%"><a href="#/idx"><vs-icon icon="fingerprint" size="50px" bg=""></vs-icon></a></div>
+    <div class="enter" style="position:absolute;left:50%"><a href="#/idx"><vs-icon icon="fingerprint" size="50px" bg=""></vs-icon></a></div>
   </div>
 </template>
 <style scoped>

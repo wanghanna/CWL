@@ -1,8 +1,10 @@
 <template>
 <div>
   <div class="row m-0">
+    <div class="row m-0">
     <vs-icon icon="fingerprint" size="medium" bg=""></vs-icon>
     <vs-breadcrumb :items="item" separator="|" class="font"></vs-breadcrumb>
+    </div>
     </div>
   <div class="home d-flex flex-column align-items-center px-5">
     <HelloWorld />

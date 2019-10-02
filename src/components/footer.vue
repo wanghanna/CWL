@@ -6,6 +6,7 @@
         <hr class="styleT"/>
         <div style="text-align:start">
           <img src="../assets/LOGO_Lamp.svg" width="100px" />
+          <p><b>Business Hour: </b>Mon~Fri 09:00~18:00</p>
         </div>
 
         <!-- <p>服務範圍: 全台各區</p> -->
@@ -32,13 +33,13 @@
       </div>
     </div>
     <div class="col">
-      <!-- <img id="map" src="../assets/map.png" alt="" /> -->
+      <img id="map" src="../assets/map.png" alt="" />
     </div>
   </div>
 </template>
 <style scoped>
 .main {
-  padding:100px 50px 150px 50px;
+  padding:100px 50px 100px 50px;
   line-height:35px;
   background:#C2C2C2
 }

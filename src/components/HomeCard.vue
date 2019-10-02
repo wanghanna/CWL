@@ -15,7 +15,7 @@
       </div>
       <div slot="footer">
         <vs-row vs-justify="flex-end">
-          <vs-button type="filled" color="#3ACEDD" icon="dashboard"></vs-button>
+          <vs-icon icon="bubble_chart" size="medium" color="#3ACEDD" class="mr-3"></vs-icon>
         </vs-row>
       </div>
     </vs-card>
@@ -36,7 +36,7 @@
       </div>
       <div slot="footer">
         <vs-row vs-justify="flex-end">
-          <vs-button type="filled" color="#3ACEDD" icon="dashboard"></vs-button>
+          <vs-icon icon="bubble_chart" size="medium" color="#3ACEDD" class="mr-3"></vs-icon>
         </vs-row>
       </div>
     </vs-card>
@@ -57,7 +57,7 @@
       </div>
       <div slot="footer">
         <vs-row vs-justify="flex-end">
-          <vs-button type="filled" color="#3ACEDD" icon="dashboard"></vs-button>
+          <vs-icon icon="bubble_chart" size="medium" color="#3ACEDD" class="mr-3"></vs-icon>
         </vs-row>
       </div>
     </vs-card>

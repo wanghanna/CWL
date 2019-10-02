@@ -1,9 +1,9 @@
 <template>
-  <div class="container">
+  <div style="width:100%">
     <vs-row vs-justify="center" class="flex-column flex-md-row">
       <!-- 1 -->
       <vs-col type="flex" vs-justify="center" vs-align="center" class="col">
-        <vs-card>
+        <vs-card class="cardType">
           <div slot="header">
             <h3>
               項目
@@ -20,19 +20,14 @@
           </div>
           <div slot="footer">
             <vs-row vs-justify="flex-end">
-              <vs-button
-                type="gradient"
-                color="warning"
-                round
-                icon="library_add"
-              ></vs-button>
+             <vs-icon icon="line_style" size="medium" color="#3ACEDD" class="mr-3"></vs-icon>
             </vs-row>
           </div>
         </vs-card>
       </vs-col>
       <!-- 2 -->
       <vs-col type="flex" vs-justify="center" vs-align="center" class="col">
-        <vs-card>
+        <vs-card class="cardType">
           <div slot="header">
             <h3>
               類別
@@ -50,18 +45,14 @@
           </div>
           <div slot="footer">
             <vs-row vs-justify="flex-end">
-              <vs-button
-                type="gradient"
-                color="warning"
-                icon="library_add"
-              ></vs-button>
+              <vs-icon icon="track_changes" size="medium" color="#3ACEDD" class="mr-3"></vs-icon>
             </vs-row>
           </div>
         </vs-card>
       </vs-col>
       <!-- 3 -->
       <vs-col type="flex" vs-justify="center" vs-align="center" class="col">
-        <vs-card>
+        <vs-card class="cardType">
           <div slot="header">
             <h3>
               經銷廠牌
@@ -93,11 +84,7 @@
           </div>
           <div slot="footer">
             <vs-row vs-justify="flex-end">
-              <vs-button
-                type="gradient"
-                color="warning"
-                icon="library_add"
-              ></vs-button>
+              <vs-icon icon="grain" size="medium" color="#3ACEDD" class="mr-3"></vs-icon>
             </vs-row>
           </div>
         </vs-card>
@@ -106,19 +93,30 @@
   </div>
 </template>
 <style scoped>
+.cardType{
+  padding:10px;
+  border-width:0 1.2px 0 1.2px;
+  border-radius:20px;
+  border-color:rgb(78, 78, 78);;
+  border-style:solid;
+  box-shadow:0 0 0 #fff;
+
+}
 h3 {
   font-family: "Noto Sans TC", sans-serif;
-  color:#656a6c
+  font-weight:bolder;
+  color:#3ACEDD
 }
 .f1 {
   font-family: "Noto Sans TC", sans-serif;
   font-size: 20px;
+  color:#33322E;
 }
 ul {
   list-style: none;
   line-height: 50px;
 }
-li {
+li{
 }
 </style>
 <script>
