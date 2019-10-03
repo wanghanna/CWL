@@ -69,7 +69,7 @@
               </ul>
               <img src="../assets/as2_OSRAM.png" :style="as2_logo" /><img
                 src="../assets/as2_KAOS.png"
-                width="100px"
+                :style="as2_logo"
               /><img src="../assets/as2_philips.png" :style="as2_logo" /><img
                 src="../assets/as2_ge.png"
                 :style="as2_logo"
@@ -106,16 +106,16 @@ h3 {
   font-family: "Noto Sans TC", sans-serif;
   font-weight:bolder;
   color:#33322E;
-  font-size:2vh;
+  font-size:3vh;
 }
 .f1 {
   font-family: "Noto Sans TC", sans-serif;
-  font-size: 1.8vh;
+  font-size: 2.5vh;
   color:#33322E;
 }
 ul {
   list-style: none;
-  line-height: 50px;
+  line-height: 5vh;
 }
 li{
 }
@@ -123,7 +123,7 @@ li{
 <script>
 export default {
   data() {
-    let as2_logo = "width:100px";
+    let as2_logo = "height:6vh";
     return {
       as2_logo
     };

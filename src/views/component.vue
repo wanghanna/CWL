@@ -134,7 +134,7 @@ export default {
     let btnc = "#268893";
     let btnt = "flat";
  let item = [
-      { title: "Product", url: "#/product",disabled: true },
+      { title: "產品資訊", url: "#/product",disabled: true },
       { title: "光源商品", url: "#/light"},
       { title: "零組件商品", url: "#/component",disabled: true},
     ];

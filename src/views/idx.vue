@@ -12,11 +12,11 @@
     <HomeNews />
     <br><br><br><br>
     <h3 id="h3p" class="mr-auto px-5">Product</h3>
-    <hr />
+    <hr class="styleT">
     <HomeCard />
     <br><br><br>
-  </div>
-      <br><br><br><br><br>
+  </div>      
+      <div><br><br><br><br><br></div>
   </div>
 </template>
 <style scoped>
@@ -45,8 +45,10 @@ font-weight:bolder;
   left:-15%;
   z-index:-1
 }
-#h3p:hover,
-#h3n:hover {
+hr.styleT {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
 }
 </style>
 <script>

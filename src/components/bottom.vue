@@ -8,7 +8,8 @@
   </div>
 <!-- 小尺寸 -->
 <div id="bottomS" class="row m-0 d-lg-none row m-0 fixed-bottom bg-light">
-<a class="sM col" href="#/idx"><div class="row flex-column"><vs-icon icon="home"></vs-icon><div>首頁</div></div></a>
+<a class="sM col" href="#/idx"><div class="m-0 row flex-column"><vs-icon icon="home"></vs-icon><div>回首頁</div></div></a>
+<!-- <div class="col sM m-0 row flex-column" v-on:click="goback"><vs-icon icon="home"></vs-icon><div>上一頁</div></div> -->
 <a class="sM col" href="tel:+886-7-2382383"><div class="row flex-column"><vs-icon icon="phone"></vs-icon><div>通訊</div></div></a>
 <a class="sM col" href="mailto:chenweilight@yahoo.com.tw"><div class="row flex-column"><vs-icon icon="mail"></vs-icon><div>通信</div></div></a>
 <a class="sM col" href="#/about/#"><div class="row flex-column"><vs-icon icon="dashboard"></vs-icon><div>詳細</div></div></a>
@@ -61,3 +62,12 @@ a{
   text-decoration:none;
 }
 </style>
+<script>
+export default{
+methods: {
+  goback: function(){
+    window.history.go(-1)
+  }
+}
+}
+</script>

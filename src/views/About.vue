@@ -81,7 +81,7 @@ export default {
     return {
       item: [
         {
-          title: "Company",
+          title: "關於辰偉",
           url: "#/about",
           disabled: true
         },

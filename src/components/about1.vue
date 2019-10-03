@@ -11,6 +11,11 @@
   </ul>
   <br>
     <ul class="row flex-column flex-md-row m-0">
+    <li class="mr-5"><h4>服務範圍</h4></li>
+    <li><h5>全省各區</h5><h6>offer the best service</h6></li>
+  </ul>
+  <br>
+    <ul class="row flex-column flex-md-row m-0">
     <li class="mr-5"><h4>營業地址</h4></li>
     <li><h5>高雄市新興區七賢一路199號</h5><h6>No. 199,QIXIAN 1ST RD., XINXING DIST., KAOHSIUNG CITY
           800,TAIWAN(R.O.C)</h6></li>
@@ -49,15 +54,15 @@ ul{
 }
 h1{
   font-family: "Noto Sans TC", sans-serif;
-  font-size:2vh;
+  font-size:3vh;
 }
 h3,h4,h5{
   font-family: "Noto Sans TC", sans-serif;
-  font-size:1.5vh;
+  font-size:2.5vh;
 }
 h6{
   font-family: "Noto Sans TC", sans-serif;
-  font-size:1vh;
+  font-size:2vh;
 
 }
 .eng{

@@ -9,9 +9,9 @@
         </div>
       <div class="row m-0">
         <vs-navbar-item index="0"><router-link to="/idx"><span class="mx-2 buttonOverlay">Home</span></router-link></vs-navbar-item>
-         <vs-navbar-item index="1"><router-link to="/about"><span class="mx-2 buttonOverlay">Company</span></router-link></vs-navbar-item>
-         <vs-navbar-item index="2"><router-link to="/product"><span class="mx-2 buttonOverlay">Product</span></router-link></vs-navbar-item>
-         <vs-navbar-item index="3"><router-link to="/knowledge"><span class="ml-2 mr-5 buttonOverlay">About light</span></router-link></vs-navbar-item>
+         <vs-navbar-item index="1"><router-link to="/about"><span class="mx-2 buttonOverlay">關於辰偉</span></router-link></vs-navbar-item>
+         <vs-navbar-item index="2"><router-link to="/product"><span class="mx-2 buttonOverlay">產品資訊</span></router-link></vs-navbar-item>
+         <vs-navbar-item index="3"><router-link to="/knowledge"><span class="ml-2 mr-5 buttonOverlay">充電站</span></router-link></vs-navbar-item>
       </div>
     </vs-navbar>
     <!-- 小尺寸 -->
@@ -24,11 +24,11 @@
       <div id="menu" v-if="cols">
         <div class="menu1"><router-link to="/idx"><span @click="cols = !cols">Home</span></router-link></div>
         <hr class="styleT">
-         <div class="menu1"><router-link to="/about"><span @click="cols = !cols">Company</span></router-link></div>
+         <div class="menu1"><router-link to="/about"><span @click="cols = !cols">關於辰偉</span></router-link></div>
          <hr class="styleT">
-         <div class="menu1"><router-link to="/product"><span @click="cols = !cols">Product</span></router-link></div>
+         <div class="menu1"><router-link to="/product"><span @click="cols = !cols">產品資訊</span></router-link></div>
          <hr class="styleT">
-         <div class="menu1"><router-link to="/knowledge"><span @click="cols = !cols">About light</span></router-link></div>
+         <div class="menu1"><router-link to="/knowledge"><span @click="cols = !cols">充電站</span></router-link></div>
          <hr class="styleT">
          <a href="#"><vs-icon id="smalla" icon="eject" size="medium" @click="cols = !cols"></vs-icon></a>
       </div>

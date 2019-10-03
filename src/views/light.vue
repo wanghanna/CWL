@@ -260,7 +260,7 @@ export default {
     let btnt = "line";
     let cols =  false;
 let item = [
-      { title: "Product", url: "#/product", disabled: true },
+      { title: "產品資訊", url: "#/product", disabled: true },
       { title: "光源商品", url: "#/light", disabled: true },
       { title: "零組件商品", url: "#/component"},
     ];

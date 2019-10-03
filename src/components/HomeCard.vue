@@ -1,77 +1,59 @@
 <template>
-    <div class="row flex-column flex-md-row m-0">
+    <div class="d-flex flex-column flex-lg-row">
     <!-- 1 -->
-    <vs-row vs-justify="center" class="col">
-  <vs-col type="flex" vs-justify="center" vs-align="center" vs-w="10">
-    <vs-card actionable class="cardType">
-      <div slot="header">
-        <h3>
-          Hello world !
-        </h3>
-        <div><img src="../assets/logo.png" width="100vh"></div>
-      </div>
-      <div>
-        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
-      </div>
-      <div slot="footer">
-        <vs-row vs-justify="flex-end">
-          <vs-icon icon="bubble_chart" size="medium" color="#3ACEDD" class="mr-3"></vs-icon>
-        </vs-row>
-      </div>
-    </vs-card>
-  </vs-col>
-</vs-row>
+<div class="cardS col bg-light">
+  <div class="text-center"><h1>Lorem, ipsum</h1></div>
+  <div class="text-center"><img src="../assets/logo.png"></div>
+  <div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, suscipit.</p>
+  </div>
+</div>
 <!-- 2 -->
-<vs-row vs-justify="center" class="col">
-  <vs-col type="flex" vs-justify="center" vs-align="center" vs-w="10">
-    <vs-card actionable class="cardType">
-      <div slot="header">
-        <h3>
-          Hello world !
-        </h3>
-        <div><img src="../assets/logo.png" width="100vh" alt=""></div>
-      </div>
-      <div>
-        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
-      </div>
-      <div slot="footer">
-        <vs-row vs-justify="flex-end">
-          <vs-icon icon="bubble_chart" size="medium" color="#3ACEDD" class="mr-3"></vs-icon>
-        </vs-row>
-      </div>
-    </vs-card>
-  </vs-col>
-</vs-row>
+<div class="cardS col bg-light">
+  <div class="text-center"><h1>Lorem, ipsum</h1></div>
+  <div class="text-center"><img src="../assets/logo.png"></div>
+  <div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, suscipit.</p>
+  </div>
+</div>
 <!-- 3 -->
-<vs-row vs-justify="center" class="col">
-  <vs-col type="flex" vs-justify="center" vs-align="center" vs-w="10">
-    <vs-card actionable class="cardType">
-      <div slot="header">
-        <h3>
-          Hello world !
-        </h3>
-        <div><img src="../assets/logo.png" width="100vh" alt=""></div>
-      </div>
-      <div>
-        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
-      </div>
-      <div slot="footer">
-        <vs-row vs-justify="flex-end">
-          <vs-icon icon="bubble_chart" size="medium" color="#3ACEDD" class="mr-3"></vs-icon>
-        </vs-row>
-      </div>
-    </vs-card>
-  </vs-col>
-</vs-row>
+<div class="cardS col bg-light">
+  <div class="text-center"><h1>Lorem, ipsum</h1></div>
+  <div class="text-center"><img src="../assets/logo.png"></div>
+  <div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, suscipit.</p>
+  </div>
+</div>
 <!-- 4 -->
 </div>
 </template>
 <style scoped>
-.cardType{
-  border-width:0 1.2px 0 1.2px;
+.cardS{
+  font-family: "Noto Sans TC", sans-serif;
+  margin:5px;
+  transition:1s;
+}
+.cardS:hover{
+  transform:scale(0.9);
+  box-shadow:inset 10px 10px 30px rgba(170, 170, 170, 0.295),inset -20px -20px 10px rgb(241, 241, 241);
   border-radius:20px;
-  border-color:rgb(78, 78, 78);
-  border-style:solid;
-  box-shadow:0 0 0 #fff;
+}
+.cardS img{
+width:20vh;
+}
+.cardS div{
+  margin:1vh 2vh;
+}
+
+h1{
+  font-size:3vh;
+  color:rgb(63, 63, 63);
+  line-height:8vh;
+  font-weight:bolder;
+}
+p{
+  font-size:2vh;
+  color:rgb(31, 30, 30);
+  line-height:5vh;
 }
 </style>

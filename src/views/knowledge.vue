@@ -81,7 +81,7 @@ export default {
     return {
       item: [
         {
-          title: "About Light",
+          title: "充電站",
           url: "#/knowledge",
           disabled: true
         },

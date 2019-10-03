@@ -73,9 +73,9 @@ p,h3 {
   font-family: "Noto Sans TC", sans-serif;
 }
 h3{
-  font-size:20px
+  font-size:2.5vh;
 }
 p{
-  font-size:12px;
+  font-size:2vh;
 }
 </style>
