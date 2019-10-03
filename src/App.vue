@@ -9,7 +9,7 @@
     <!-- footer -->
     <ft/>
     <!-- bottom -->
-    <bot class="fixed-bottom" />
+    <bot />
   </div>
 </template>
 

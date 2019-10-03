@@ -10,21 +10,19 @@
 </div>
 <!-- vs-breadcrumb end --> 
 <!-- small_nav    -->
-<div class="d-lg-none row m-0 flex-column mb-3">
-<div class="col row m-0 justify-content-center text-center">
-  <div class="col bg-light border p-2"><a href="#/light" class="text-dark">前往 - 光源商品</a></div>
-  <div class="col bg-secondary border p-2"><a href="#/component" class="text-light">零組件商品</a></div>
+<div class="d-lg-none mb-3">
+<div class="col row m-0 justify-content-center text-center mb-3">
+  <div class="col bg-light border p-2" style="height:50px"><a href="#/light" class="text-dark">光源商品</a></div>
+  <div class="col bg-info border p-2" style="height:50px"><a href="#/component" class="text-light">零組件商品</a></div>
 </div>
-<div class="col" style="">
-  <vs-collapse open-hover>
-    <vs-collapse-item icon-arrow="">
-      <div slot="header" style="text-align:end"><vs-icon icon="wb_incandescent" class="ho"></vs-icon></div>
-      <br>
-      <div class="mmenu">零組件 - 全部商品<hr class="hrs"/></div>
-      <div class="mmenu">check now</div>
-      <div class="mmenu"><vs-icon icon="call_made"></vs-icon></div>
-    </vs-collapse-item>
-  </vs-collapse>
+<div class="text-right"><vs-icon icon="wb_incandescent" class="ho" @click="clos = !clos"></vs-icon></div>
+<div v-if="clos" class="bg-info">
+  <div class="mmenu" @click="clos = !clos">零組件 - 全部商品</div>
+  <hr class="hrs"/>
+  <div class="mmenu" @click="clos = !clos">123456</div>
+  <div class="mmenu" @click="clos = !clos">123456</div>
+  <div class="mmenu" @click="clos = !clos">123456</div>
+  <div class="mmenu" @click="clos = !clos"><vs-icon icon="eject"></vs-icon></div>
 </div>
 </div>
 <!-- small_nav_end -->
@@ -38,14 +36,18 @@ hr.hrs{
     background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
 }
 .mmenu{
-  color:#7d7c85;
-  background:#ebebeb86;
+  color:rgb(67, 75, 97);
   height:50px;
   padding:20px 10px;
-  font-size:20px;
+  font-size:15px;
   line-height:15px;
   font-family: "Noto Sans TC", sans-serif;
   text-align:center;
+  cursor:crosshair;
+}
+.mmenu:hover{
+  background:linear-gradient(to right,transparent,#fff,transparent);
+  color:#000;
 }
 
 .ho{
@@ -136,12 +138,14 @@ export default {
       { title: "光源商品", url: "#/light"},
       { title: "零組件商品", url: "#/component",disabled: true},
     ];
+    let clos = false;
     return{
       btns,
       btnc,
       btnt,
-      item
+      item,
+      clos
     }
-  }
+  },
 };
 </script>

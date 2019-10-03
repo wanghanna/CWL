@@ -1,11 +1,11 @@
 <template>
-<div>
+<div class="container-fluid">
     <div class="row m-0">
      <div class="col mr-auto"></div>
     <vs-icon icon="fingerprint" size="medium" bg=""></vs-icon>
     <vs-breadcrumb :items="item" separator="|" class="font"></vs-breadcrumb>
     </div>
-  <div class="home d-flex flex-column align-items-center px-5">
+  <div>
     <HelloWorld />
     <br><br><br><br>
     <h3 id="h3n" class="mr-auto px-5">News</h3>

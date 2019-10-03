@@ -10,32 +10,28 @@
     </div>
 </div>
 <!-- vs-breadcrumb end -->
-<div class="d-lg-none row m-0 flex-column mb-3">
-<div class="col row m-0 justify-content-center text-center">
-  <div class="col bg-secondary border p-2 text-light">光源商品</div>
-  <div class="col bg-light border p-2"><a href="#/component" class="text-dark">前往-零組件商品</a></div>
+<div class="d-lg-none mb-3">
+<div class="col row m-0 justify-content-center text-center mb-3">
+  <div class="col bg-info border p-2 text-light" style="height:50px">光源商品</div>
+  <div class="col bg-light border p-2" style="height:50px"><a href="#/component" class="text-dark">零組件商品</a></div>
 </div>
-<div class="col" style="">
-  <vs-collapse open-hover>
-    <vs-collapse-item icon-arrow="">
-      <div slot="header"><vs-icon icon="wb_incandescent" class="ho"></vs-icon></div>
+      <div><vs-icon icon="wb_incandescent" class="ho" @click="cols = !cols"></vs-icon></div>
       <br>
-      <div class="mmenu" v-on:click="all">光源 - 全部商品<hr class="hrs"/></div>
-      <div class="mmenu" v-on:click="P1">LED燈管燈泡</div>
-      <div class="mmenu" v-on:click="P2">LED櫥櫃嵌燈</div>
-      <div class="mmenu" v-on:click="P3">LED投光燈具</div>
-      <div class="mmenu" v-on:click="P4">省電燈管燈泡</div>
-      <div class="mmenu" v-on:click="P5">鹵素燈管燈泡</div>
-      <div class="mmenu" v-on:click="P6">鎢絲燈管燈泡</div>
-      <div class="mmenu " v-on:click="P7">螢光燈管系列</div>
-      <div class="mmenu" v-on:click="P8">HID燈泡燈管</div>
-      <div class="mmenu" v-on:click="P9">醫療系列</div>
-      <div class="mmenu" v-on:click="P10">影視舞台專用</div>
-      <div class="mmenu" v-on:click="P11">一般燈具</div>
-      <div class="mmenu"><vs-icon icon="call_made"></vs-icon></div>
-    </vs-collapse-item>
-  </vs-collapse>
-</div>
+      <div v-if="cols" class="bg-info">
+      <div class="mmenu" v-on:click="all" @click="cols = !cols">光源 - 全部商品<hr class="hrs"/></div>
+      <div class="mmenu" v-on:click="P1" @click="cols = !cols">LED燈管燈泡</div>
+      <div class="mmenu" v-on:click="P2" @click="cols = !cols">LED櫥櫃嵌燈</div>
+      <div class="mmenu" v-on:click="P3" @click="cols = !cols">LED投光燈具</div>
+      <div class="mmenu" v-on:click="P4" @click="cols = !cols">省電燈管燈泡</div>
+      <div class="mmenu" v-on:click="P5" @click="cols = !cols">鹵素燈管燈泡</div>
+      <div class="mmenu" v-on:click="P6" @click="cols = !cols">鎢絲燈管燈泡</div>
+      <div class="mmenu " v-on:click="P7" @click="cols = !cols">螢光燈管系列</div>
+      <div class="mmenu" v-on:click="P8" @click="cols = !cols">HID燈泡燈管</div>
+      <div class="mmenu" v-on:click="P9" @click="cols = !cols">醫療系列</div>
+      <div class="mmenu" v-on:click="P10" @click="cols = !cols">影視舞台專用</div>
+      <div class="mmenu" v-on:click="P11" @click="cols = !cols">一般燈具</div>
+      <div class="mmenu"><vs-icon icon="eject" @click="cols = !cols"></vs-icon></div>
+      </div>
 </div>
       <!--big light-navbar -->
         <div>
@@ -152,17 +148,21 @@
 hr.hrs{
   border: 0;
     height: 1px;
-    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0,0,0,0));
 }
 .mmenu{
-  color:#7d7c85;
-  background:#ebebeb86;
+  color:rgb(67, 75, 97);
   height:50px;
   padding:20px 10px;
-  font-size:20px;
+  font-size:15px;
   line-height:15px;
   font-family: "Noto Sans TC", sans-serif;
   text-align:center;
+  cursor:crosshair;
+}
+.mmenu:hover{
+  background:linear-gradient(to right,transparent,rgb(255, 255, 255),transparent);
+  color:#000;
 }
 
 .ho{
@@ -172,6 +172,7 @@ hr.hrs{
    animation-fill-mode:forwards;
    animation-duration:1s;
    animation-timing-function:cubic-bezier(.02,1.95,.36,-0.13);
+   cursor:pointer;
    
 }
 @keyframes ho{
@@ -257,6 +258,7 @@ export default {
     let btns = "m-1 col";
     let btnc = "#2D354B";
     let btnt = "line";
+    let cols =  false;
 let item = [
       { title: "Product", url: "#/product", disabled: true },
       { title: "光源商品", url: "#/light", disabled: true },
@@ -268,7 +270,8 @@ let item = [
       btnc,
       btnt,
       item,
-      activeItem: 0
+      activeItem: 0,
+      cols
     };
   },
   created() {

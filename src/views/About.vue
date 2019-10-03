@@ -19,7 +19,7 @@
     </div>
     <br id="a2" /><br /><br /><br /><br />
     <div>
-    <h3 id="a21" class="mr-auto px-5">經營內容 - 全省服務</h3>
+    <h3 id="a21" class="mr-auto px-5">經營內容</h3>
     <br /><br />
     <about2 />
     </div>

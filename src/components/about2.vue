@@ -1,5 +1,5 @@
 <template>
-  <div style="width:100%">
+  <div>
     <vs-row vs-justify="center" class="flex-column flex-md-row">
       <!-- 1 -->
       <vs-col type="flex" vs-justify="center" vs-align="center" class="col">

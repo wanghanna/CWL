@@ -7,7 +7,7 @@
         <router-link to="/"><span><img src="../assets/LOGO_Lamp.svg" style="width:50px" class="mx-3 timg" title="辰偉照明" alt="ChenWeiLighting"></span></router-link>
         <span>辰偉照明</span></vs-navbar-title>
         </div>
-      <div id="menu" class="row m-0">
+      <div class="row m-0">
         <vs-navbar-item index="0"><router-link to="/idx"><span class="mx-2 buttonOverlay">Home</span></router-link></vs-navbar-item>
          <vs-navbar-item index="1"><router-link to="/about"><span class="mx-2 buttonOverlay">Company</span></router-link></vs-navbar-item>
          <vs-navbar-item index="2"><router-link to="/product"><span class="mx-2 buttonOverlay">Product</span></router-link></vs-navbar-item>
@@ -15,24 +15,41 @@
       </div>
     </vs-navbar>
     <!-- 小尺寸 -->
-        <vs-navbar class="nabarx d-lg-none bg-secondary" v-model="activeItem" :type="navbarType" :style="navbarStyle">
-      <div slot="title" class="my-2">
-      <vs-navbar-title :class="titleClass">
-        <span class="mr-2" style="color:#3ACEDD;font-weight:bolder;font-size:3vh">辰偉照明</span>
-        <router-link to="/"><span><img src="../assets/LOGO_Lamp.svg" style="width:50px;" class="timg"></span></router-link>
-        </vs-navbar-title>
-        </div>
-      <div id="menu" class="row m-0">
-        <vs-navbar-item index="0"><router-link to="/idx"><span>Home</span></router-link></vs-navbar-item>
-         <vs-navbar-item index="1"><router-link to="/about"><span>Company</span></router-link></vs-navbar-item>
-         <vs-navbar-item index="2"><router-link to="/product"><span>Product</span></router-link></vs-navbar-item>
-         <vs-navbar-item index="3"><router-link to="/knowledge"><span>About light</span></router-link></vs-navbar-item>
+    <div class="d-lg-none">
+    <div id="small" class="bg-info row m-0 align-items-center">
+      <vs-icon id="smalla" icon="menu" size="medium" class="ml-3 mr-auto" @click="cols = !cols"></vs-icon>
+      <span style="color:#eaeaea;font-weight:bolder;font-size:30px">辰偉照明</span>
+      <router-link to="/"><span class="px-4"><img src="../assets/LOGO_Lamp.svg" style="width:50px;" class="timg"></span></router-link>
+    </div>
+      <div id="menu" v-if="cols">
+        <div class="menu1"><router-link to="/idx"><span @click="cols = !cols">Home</span></router-link></div>
+        <hr class="styleT">
+         <div class="menu1"><router-link to="/about"><span @click="cols = !cols">Company</span></router-link></div>
+         <hr class="styleT">
+         <div class="menu1"><router-link to="/product"><span @click="cols = !cols">Product</span></router-link></div>
+         <hr class="styleT">
+         <div class="menu1"><router-link to="/knowledge"><span @click="cols = !cols">About light</span></router-link></div>
+         <hr class="styleT">
+         <vs-icon id="smalla" icon="eject" size="medium" @click="cols = !cols"></vs-icon>
       </div>
-    </vs-navbar>
+      </div>
     <hr class="styleT">
   </div>
 </template>
 <style scoped>
+#smalla{
+transition:0.5s;
+border-radius:50%;
+color:#000;
+cursor:pointer;
+}
+#smalla:hover{
+color:#d1d1d1;
+}
+#small{
+  height:100px;
+  background:linear-gradient(to bottom, #17A2B8 50%,#6C757D 50%);
+}
 .timg{
   transition:0.5s;
 }
@@ -52,7 +69,25 @@ border: 0;
   a{
     text-decoration:none;
   }
-  /* menu */
+  #menu{
+    padding:10px 20px;
+    background:#ebebeb;
+    text-align:center;
+  }
+  #menu a{
+   line-height:35px;
+   color:black; 
+   transition:0.5s;
+  }
+  #menu a:hover{
+    color:#fff;
+  }
+.menu1{
+  transition:0.5s;
+}
+.menu1:hover{
+  background:linear-gradient(to right, transparent,#3acddd,transparent);
+}
   .buttonOverlay {
     padding: 10px 25px;
     position: relative;
@@ -94,6 +129,7 @@ export default {
   navbarType: "shadow",
   navbarStyle: "background:#fff;box-shadow:0 0 0 #fff",
   titleClass: "row m-0 px-4 align-items-center",
+  cols: false,
 })
 };
 </script>
