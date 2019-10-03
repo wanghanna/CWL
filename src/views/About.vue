@@ -2,10 +2,11 @@
   <div>
     <div>
       <div class="row m-0">
+        <div class="col mr-auto"></div>
       <vs-icon icon="fingerprint" size="medium" bg=""></vs-icon>
     <vs-breadcrumb
       :items="item"
-      class="break"
+      class="break font"
       separator="|"
     ></vs-breadcrumb>
     </div>
@@ -61,6 +62,9 @@ img {
   height: auto;
   max-width: 100%;
   max-height: 100%;
+}
+.font{
+    font-weight:bolder;
 }
 </style>
 <script>

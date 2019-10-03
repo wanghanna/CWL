@@ -1,10 +1,9 @@
 <template>
 <div>
-  <div class="row m-0">
     <div class="row m-0">
+     <div class="col mr-auto"></div>
     <vs-icon icon="fingerprint" size="medium" bg=""></vs-icon>
     <vs-breadcrumb :items="item" separator="|" class="font"></vs-breadcrumb>
-    </div>
     </div>
   <div class="home d-flex flex-column align-items-center px-5">
     <HelloWorld />
@@ -64,7 +63,7 @@ export default {
   },
   data() {
     let item = [
-      { title: "Home", url: "#/idx" },
+      { title: "Home", url: "#/idx" ,disabled: true},
     ];
     return {
       item

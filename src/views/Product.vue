@@ -1,13 +1,13 @@
 <template>
-  <div class="row justify-content-center m-0 container-fluid px-5">
-    <pnavbar />
+  <div>
+    <light />
   </div>
 </template>
 <script>
-
+import light from "@/views/light.vue";
 export default {
   components: {
-
+light,
   }
 };
 </script>

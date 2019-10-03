@@ -1,7 +1,7 @@
 <template>
   <div id="navbart" class="container-fluid m-0 p-0" >
     <!-- 大尺寸 -->
-    <vs-navbar class="nabarx d-none d-md-flex pt-3" :style="navbarStyle">
+    <vs-navbar class="nabarx d-none d-lg-flex pt-3" :style="navbarStyle">
       <div slot="title">
       <vs-navbar-title :class="titleClass">
         <router-link to="/"><span><img src="../assets/LOGO_Lamp.svg" style="width:50px" class="mx-3 timg" title="辰偉照明" alt="ChenWeiLighting"></span></router-link>
@@ -10,12 +10,12 @@
       <div id="menu" class="row m-0">
         <vs-navbar-item index="0"><router-link to="/idx"><span class="mx-2 buttonOverlay">Home</span></router-link></vs-navbar-item>
          <vs-navbar-item index="1"><router-link to="/about"><span class="mx-2 buttonOverlay">Company</span></router-link></vs-navbar-item>
-         <vs-navbar-item index="2"><router-link to="/light"><span class="mx-2 buttonOverlay">Product</span></router-link></vs-navbar-item>
+         <vs-navbar-item index="2"><router-link to="/product"><span class="mx-2 buttonOverlay">Product</span></router-link></vs-navbar-item>
          <vs-navbar-item index="3"><router-link to="/knowledge"><span class="ml-2 mr-5 buttonOverlay">About light</span></router-link></vs-navbar-item>
       </div>
     </vs-navbar>
     <!-- 小尺寸 -->
-        <vs-navbar class="nabarx d-md-none bg-secondary" v-model="activeItem" :type="navbarType" :style="navbarStyle">
+        <vs-navbar class="nabarx d-lg-none bg-secondary" v-model="activeItem" :type="navbarType" :style="navbarStyle">
       <div slot="title" class="my-2">
       <vs-navbar-title :class="titleClass">
         <span class="mr-2" style="color:#3ACEDD;font-weight:bolder;font-size:3vh">辰偉照明</span>
@@ -25,7 +25,7 @@
       <div id="menu" class="row m-0">
         <vs-navbar-item index="0"><router-link to="/idx"><span>Home</span></router-link></vs-navbar-item>
          <vs-navbar-item index="1"><router-link to="/about"><span>Company</span></router-link></vs-navbar-item>
-         <vs-navbar-item index="2"><router-link to="/light"><span>Product</span></router-link></vs-navbar-item>
+         <vs-navbar-item index="2"><router-link to="/product"><span>Product</span></router-link></vs-navbar-item>
          <vs-navbar-item index="3"><router-link to="/knowledge"><span>About light</span></router-link></vs-navbar-item>
       </div>
     </vs-navbar>

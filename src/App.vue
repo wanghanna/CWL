@@ -19,6 +19,23 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+table {
+  width: 100%;
+  margin-top: 50px;
+}
+table td {
+  border-bottom: 1px solid rgb(165, 165, 165);
+  padding-top: 50px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+table img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
 </style>
 <script>
 import Vue from "vue";
