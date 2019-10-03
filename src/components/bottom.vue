@@ -11,7 +11,7 @@
   color: #1F1F1E;
   font-weight:bolder;
   font-size:2vh;
-  /* box-shadow:inset 0 0 10px azure; */
+  background:linear-gradient(to right,transparent 25%,white,transparent 75%);
   font-family: "Teko", sans-serif;
 }
 </style>

@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div style="position:relative">
+    <div id="bac" class="m-0 p-0"></div>
       <div>
       <div class="row m-0">
         <div class="col mr-auto"></div>
@@ -14,29 +15,54 @@
     </div>
         <div class="container">
           <br id="k0" /><br /><br /><br /><br />
-          <vs-divider><h3>何謂光源</h3></vs-divider>
+          <h3 class="text-right">何謂光源</h3>
+          <hr class="styleT">
           <k0 />
           <br id="k1" /><br /><br /><br /><br />
-          <vs-divider><h3>光源分類</h3></vs-divider>
+          <h3>光源分類</h3>
+          <hr class="styleB">
           <k1 />
           <br id="k2" /><br /><br /><br /><br />
           <h3>
-            <vs-divider><h3>注意事項</h3></vs-divider>
+          <h3 class="text-right">注意事項</h3>
+            <hr class="styleT">
           </h3>
           <k2 />
           <br id="k3" /><br /><br /><br /><br />
-          <vs-divider><h3>品牌介紹</h3></vs-divider>
+          <h3>品牌介紹</h3>
+          <hr class="styleB">
           <k3 />
         </div>
       </div>
+      <br><br><br><br><br>
   </div>
 </template>
 <style scoped>
-.break {
+#bac{
+position:fixed;
+background:linear-gradient(30deg,rgba(204, 204, 204, 0.486)10%,rgba(230, 230, 230, 0.164) 50%, rgb(255, 255, 255));
+border-radius:100% 0 0 0;
+z-index:-2;
+width:100%;
+height:95%;
+overflow:hidden;
+}
+
+.break,h3 {
   font-family: "Noto Sans TC", sans-serif;
 }
-.font{
+.font,h3{
     font-weight:bolder;
+}
+hr.styleT {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.75), rgba(0,0,0,0));
+}
+hr.styleB {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0), rgba(0,0,0,0.75));
 }
 </style>
 <script>
