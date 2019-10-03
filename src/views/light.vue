@@ -30,7 +30,7 @@
       <div class="mmenu" v-on:click="P9" @click="cols = !cols">醫療系列</div>
       <div class="mmenu" v-on:click="P10" @click="cols = !cols">影視舞台專用</div>
       <div class="mmenu" v-on:click="P11" @click="cols = !cols">一般燈具</div>
-      <div class="mmenu"><vs-icon icon="eject" @click="cols = !cols"></vs-icon></div>
+      <div class="mmenu"><a href="#"><vs-icon icon="eject" @click="cols = !cols" href="#"></vs-icon></a></div>
       </div>
 </div>
       <!--big light-navbar -->
@@ -150,7 +150,7 @@ hr.hrs{
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0,0,0,0));
 }
-.mmenu{
+.mmenu,.mmenu a{
   color:rgb(67, 75, 97);
   height:50px;
   padding:20px 10px;
@@ -160,7 +160,7 @@ hr.hrs{
   text-align:center;
   cursor:crosshair;
 }
-.mmenu:hover{
+.mmenu:hover,.mmenu a:hover{
   background:linear-gradient(to right,transparent,rgb(255, 255, 255),transparent);
   color:#000;
 }

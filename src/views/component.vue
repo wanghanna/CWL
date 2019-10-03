@@ -22,7 +22,7 @@
   <div class="mmenu" @click="clos = !clos">123456</div>
   <div class="mmenu" @click="clos = !clos">123456</div>
   <div class="mmenu" @click="clos = !clos">123456</div>
-  <div class="mmenu" @click="clos = !clos"><vs-icon icon="eject"></vs-icon></div>
+  <div class="mmenu" @click="clos = !clos"><a href="#"><vs-icon icon="eject"></vs-icon></a></div>
 </div>
 </div>
 <!-- small_nav_end -->
@@ -35,7 +35,7 @@ hr.hrs{
     height: 1px;
     background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
 }
-.mmenu{
+.mmenu,.mmenu a{
   color:rgb(67, 75, 97);
   height:50px;
   padding:20px 10px;
@@ -45,7 +45,7 @@ hr.hrs{
   text-align:center;
   cursor:crosshair;
 }
-.mmenu:hover{
+.mmenu:hover,.mmenu a:hover{
   background:linear-gradient(to right,transparent,#fff,transparent);
   color:#000;
 }

@@ -30,7 +30,7 @@
          <hr class="styleT">
          <div class="menu1"><router-link to="/knowledge"><span @click="cols = !cols">About light</span></router-link></div>
          <hr class="styleT">
-         <vs-icon id="smalla" icon="eject" size="medium" @click="cols = !cols"></vs-icon>
+         <a href="#"><vs-icon id="smalla" icon="eject" size="medium" @click="cols = !cols"></vs-icon></a>
       </div>
       </div>
     <hr class="styleT">
