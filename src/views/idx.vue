@@ -1,39 +1,51 @@
 <template>
 <div>
-    <vs-breadcrumb :items="item" separator="chevron_right" class="font"></vs-breadcrumb>
+    <div class="row m-0">
+     <div class="col mr-auto"></div>
+    <vs-icon icon="fingerprint" size="medium" bg=""></vs-icon>
+    <vs-breadcrumb :items="item" separator="|" class="font"></vs-breadcrumb>
+    </div>
   <div class="home d-flex flex-column align-items-center px-5">
     <HelloWorld />
+    <br><br><br><br>
     <h3 id="h3n" class="mr-auto px-5">News</h3>
     <HomeNews />
+    <br><br><br><br>
     <h3 id="h3p" class="mr-auto px-5">Product</h3>
     <hr />
     <HomeCard />
+    <br><br><br>
   </div>
   </div>
 </template>
 <style scoped>
 .font{
   font-family: "Noto Sans TC", sans-serif;
+  font-weight:bolder;
+  color:#34332E;
 }
 #h3p,
 #h3n {
-  box-shadow: inset 0 0 5px #ffffff;
-  transition: all 0.2s;
-  color: #c5c5c5;
-  background: #252439;
-  /* background: #16b1b5;
-  color: #fff; */
+border:1px solid #33322E;
+padding:5px;
+width:10px;
+position:relative;
+color:#33322E;
+font-weight:bolder;
 
-  border-radius: 2rem;
+}
+#h3p::after,#h3n::after{
+  content:"";
+  position:absolute;
+  width:45%;
+  height:100%;
+  background:#3ACEDD;
+  top:-20%;
+  left:-15%;
+  z-index:-1
 }
 #h3p:hover,
 #h3n:hover {
-  box-shadow: inset 0 0 10px #ffffff;
-  font-size: 30px;
-  background: #16b1b5;
-  color: #fff;
-  /* color: #c5c5c5;
-  background:#252439; */
 }
 </style>
 <script>
@@ -51,7 +63,7 @@ export default {
   },
   data() {
     let item = [
-      { title: "首頁", url: "#/idx" },
+      { title: "Home", url: "#/idx" ,disabled: true},
     ];
     return {
       item

@@ -1,13 +1,13 @@
 <template>
-  <div id="app" class="container-fluid">
+  <div id="app" class="vw-100 d-flex flex-column align-items-center">
     <!-- navbar -->
-    <navbar class="sticky-top" style="z-index:9999" />
+    <navbar class="sticky-top" style="" />
     <!-- top -->
-    <vueToTop type=10 size=50 color="#207E89" top=100 style="z-index:9999"></vueToTop>
+    <vueToTop type=4 size=50 color="#1D1F29" top=100 bottom="5" right="10" style="z-index:9999"></vueToTop>
     <!-- content -->
-    <router-view />
+    <router-view style="width:90%"/>
     <!-- footer -->
-    <ft />
+    <ft/>
     <!-- bottom -->
     <bot class="fixed-bottom" />
   </div>
@@ -18,8 +18,23 @@
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+table {
+  width: 100%;
+  margin-top: 50px;
+}
+table td {
+  border-bottom: 1px solid rgb(165, 165, 165);
+  padding-top: 50px;
+  padding-bottom: 20px;
   text-align: center;
-  color: #2c3e50;
+}
+
+table img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
 }
 </style>
 <script>

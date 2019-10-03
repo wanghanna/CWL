@@ -1,27 +1,128 @@
 <template>
-  <div id="about" class="about container-fluid">
-    <div class="sticky-top">
-      <vs-breadcrumb :items="item" separator="chevron_right"></vs-breadcrumb>
-      <div>
-        <!-- component navbar -->
-        <vs-navbar v-model="activeItem" class="nabarx pt-2 row m-0" color="#ffffff">
-          <div slot="title" class="col">
-            <vs-navbar-title><vs-button line-position="bottom" line-origin="left" color="#268893" type="border"><router-link to="/light" style="color:#268893;text-decoration:none">光源產品</router-link></vs-button>&nbsp;&nbsp;•&nbsp;&nbsp;<vs-button line-position="bottom" line-origin="left" color="#268893" type="filled">零組件產品</vs-button></vs-navbar-title>
-          </div>
-          <vs-navbar-item index="0">
-            <vs-button
-              :class="btns"
-              :color="btnc" :type="btnt"
-              v-on:click="all"
-              >零組件 - 全部產品</vs-button
-            >
-          </vs-navbar-item>
-          </vs-navbar>
+  <div id="light" class="about">
+<!-- vs-breadcrumb -->
+<div class="row m-0 d-none d-lg-flex">
+    <div class="col mr-atuo"><h1>零組件商品</h1></div>
+    <div class="row m-0">
+    <vs-icon icon="fingerprint" size="medium" bg="" class=""></vs-icon>
+    <vs-breadcrumb class="font" :items="item" separator="|"></vs-breadcrumb>
+    </div>
+</div>
+<!-- vs-breadcrumb end --> 
+<!-- small_nav    -->
+<div class="d-lg-none row m-0 flex-column mb-3">
+<div class="col row m-0 justify-content-center text-center">
+  <div class="col bg-light border p-2"><a href="#/light" class="text-dark">前往 - 光源商品</a></div>
+  <div class="col bg-secondary border p-2"><a href="#/component" class="text-light">零組件商品</a></div>
+</div>
+<div class="col" style="">
+  <vs-collapse open-hover>
+    <vs-collapse-item icon-arrow="">
+      <div slot="header" style="text-align:end"><vs-icon icon="wb_incandescent" class="ho"></vs-icon></div>
+      <br>
+      <div class="mmenu">零組件 - 全部商品<hr class="hrs"/></div>
+      <div class="mmenu">check now</div>
+      <div class="mmenu"><vs-icon icon="call_made"></vs-icon></div>
+    </vs-collapse-item>
+  </vs-collapse>
+</div>
+</div>
+<!-- small_nav_end -->
       </div>
-      </div>
-
-  </div>
 </template>
+<style scoped>
+hr.hrs{
+  border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+}
+.mmenu{
+  color:#7d7c85;
+  background:#ebebeb86;
+  height:50px;
+  padding:20px 10px;
+  font-size:20px;
+  line-height:15px;
+  font-family: "Noto Sans TC", sans-serif;
+  text-align:center;
+}
+
+.ho{
+  transition:1s;
+   color: rgb(28, 29, 32);
+   animation-name:ho;
+   animation-fill-mode:forwards;
+   animation-duration:1s;
+   animation-timing-function:cubic-bezier(.02,1.95,.36,-0.13);
+   
+}
+@keyframes ho{
+  from{
+transform:scale(0)
+  }
+  to{
+transform:scale(2)
+  }
+}
+.ho:hover{
+filter:invert(1);
+}
+  a{
+    text-decoration:none;
+  }
+#light {
+  font-family: "Noto Sans TC", sans-serif;
+}
+#ltitle {
+  border:1px solid #000;
+  color: #ebebeb;
+  padding: 10px;
+  text-align: center;
+  position:relative;
+}
+#ltitle::before{
+  content:'';
+  position:absolute;
+  height:100%;
+  width:100%;
+  background: #7d7c85;
+  top:-10px;
+  left:10px;
+  z-index:-1;
+}
+#list{
+  border:1px solid #000;
+  color: #2D354B;
+  font-weight:bolder;
+  padding: 10px;
+  text-align: center;
+  position:relative;
+  white-space:nowrap;
+  width:50px;
+  height:50px;
+}
+#list::before{
+content:"";
+width:100%;
+height:100%;
+position:absolute;
+top:-15px;
+left:-15px;
+background:#3ACEDD
+;
+z-index:-1
+}
+#navbar{
+box-shadow:0 0 0 #fff;
+}
+.font{
+    font-weight:bolder;
+    font-family: "Noto Sans TC", sans-serif;
+}
+h1{
+    font-family: "Noto Sans TC", sans-serif;
+}
+</style>
 <script>
 
 export default {
@@ -29,10 +130,10 @@ export default {
       let btns = "m-1";
     let btnc = "#268893";
     let btnt = "flat";
-    let item = [
-      { title: "首頁", url: "#/idx"},
-      { title: "產品介紹", url: "#/light", disabled: true },
-      { title: "零組件產品", url: "#/component", disabled: true },
+ let item = [
+      { title: "Product", url: "#/product",disabled: true },
+      { title: "光源商品", url: "#/light"},
+      { title: "零組件商品", url: "#/component",disabled: true},
     ];
     return{
       btns,

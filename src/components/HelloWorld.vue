@@ -4,10 +4,10 @@
     <carousel
     :perPageCustom="[[100, 1], [1024, 2]]"
      :autoplay= true
-      paginationActiveColor="#268893"
+      paginationActiveColor="#33322E"
       :autoplayTimeout=3000
       :navigationEnabled = true
-      :paginationSize = 10
+      :paginationSize = 8
     >
       <slide>
         <img src="../assets/1_HBO_XBO.jpg" width="100%" />
@@ -73,7 +73,8 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 p,h3 {
-  color: #656a6c;
+  color: #33322E;
+  font-weight:bolder;
   font-family: "Noto Sans TC", sans-serif;
 }
 h3{

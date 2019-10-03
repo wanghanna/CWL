@@ -1,86 +1,99 @@
 <template>
-  <div>
-    <vs-navbar
-      v-model="activeItem"
-      class="nabarx p-1 row m-0"
-      color=""
-      text-color="#989BAC"
-      active-text-color="rgba(255,255,255,1)"
-      index="danger"
-      id="navbar-t"
-    >
-      <div slot="title" class=title>
-        <vs-navbar-title>
-          <router-link to="/"
-            ><img id="logo-t"
-              src="../assets/LOGO_Lamp.svg"
-              width="50vh"
-              class="mt-1 d-none d-md-inline-flex"/></router-link
-          >&nbsp;
-          <span style="color:#aaa">ChenWeiLighting</span>
-        </vs-navbar-title>
-      </div>
+  <div id="navbart" class="container-fluid m-0 p-0" >
+    <!-- 大尺寸 -->
+    <vs-navbar class="nabarx d-none d-lg-flex pt-3" :style="navbarStyle">
+      <div slot="title">
+      <vs-navbar-title :class="titleClass">
+        <router-link to="/"><span><img src="../assets/LOGO_Lamp.svg" style="width:50px" class="mx-3 timg" title="辰偉照明" alt="ChenWeiLighting"></span></router-link>
+        <span>辰偉照明</span></vs-navbar-title>
+        </div>
       <div id="menu" class="row m-0">
-      <vs-navbar-item index="0">
-        <router-link to="/idx" style="font-size:15px">Home</router-link>
-      </vs-navbar-item>
-      <vs-navbar-item index="1">
-        <router-link to="/about" style="font-size:15px">About US</router-link>
-      </vs-navbar-item>
-      <vs-navbar-item index="2">
-        <router-link to="/light" style="font-size:15px">Products</router-link>
-      </vs-navbar-item>
-      <vs-navbar-item index="3">
-        <router-link to="/knowledge" style="font-size:15px"
-          >About Light</router-link
-        >
-      </vs-navbar-item>
-            <vs-navbar-item index="4">
-        <router-link to="/0_testPage" style="font-size:15px"
-          >測試頁面</router-link
-        >
-      </vs-navbar-item>
+        <vs-navbar-item index="0"><router-link to="/idx"><span class="mx-2 buttonOverlay">Home</span></router-link></vs-navbar-item>
+         <vs-navbar-item index="1"><router-link to="/about"><span class="mx-2 buttonOverlay">Company</span></router-link></vs-navbar-item>
+         <vs-navbar-item index="2"><router-link to="/product"><span class="mx-2 buttonOverlay">Product</span></router-link></vs-navbar-item>
+         <vs-navbar-item index="3"><router-link to="/knowledge"><span class="ml-2 mr-5 buttonOverlay">About light</span></router-link></vs-navbar-item>
       </div>
     </vs-navbar>
+    <!-- 小尺寸 -->
+        <vs-navbar class="nabarx d-lg-none bg-secondary" v-model="activeItem" :type="navbarType" :style="navbarStyle">
+      <div slot="title" class="my-2">
+      <vs-navbar-title :class="titleClass">
+        <span class="mr-2" style="color:#3ACEDD;font-weight:bolder;font-size:3vh">辰偉照明</span>
+        <router-link to="/"><span><img src="../assets/LOGO_Lamp.svg" style="width:50px;" class="timg"></span></router-link>
+        </vs-navbar-title>
+        </div>
+      <div id="menu" class="row m-0">
+        <vs-navbar-item index="0"><router-link to="/idx"><span>Home</span></router-link></vs-navbar-item>
+         <vs-navbar-item index="1"><router-link to="/about"><span>Company</span></router-link></vs-navbar-item>
+         <vs-navbar-item index="2"><router-link to="/product"><span>Product</span></router-link></vs-navbar-item>
+         <vs-navbar-item index="3"><router-link to="/knowledge"><span>About light</span></router-link></vs-navbar-item>
+      </div>
+    </vs-navbar>
+    <hr class="styleT">
   </div>
 </template>
 <style scoped>
-#title {
-  font-family: "Noto Sans TC", sans-serif;
+.timg{
+  transition:0.5s;
 }
-#menu{
-  font-family: 'Syncopate', sans-serif;
-  font-weight:bolder;
-  padding:10px;
-  border-radius:20px;
-  color:#989BAC;
+.timg:hover{
+  transform:scale(1.2);
+  filter:invert(1)
 }
-#navbar-t{
+hr.styleT {
+border: 0;
+    height: 1.2px;
+    background-image: linear-gradient(to right, transparent, #7C7B79, transparent);
+}
+  #navbart{
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight:bolder;
+  }
+  a{
+    text-decoration:none;
+  }
+  /* menu */
+  .buttonOverlay {
+    padding: 10px 25px;
+    position: relative;
+    color: #fff;
 }
 
-#logo-t{
-  width:60px;
-  height:60px;
-  background:#0E0F14;
-  /* box-shadow:inset 0 0 10px rgb(146, 146, 146); */
-  padding:10px;
-  border-radius:50%;
-  transition:5s;
+.buttonOverlay::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 5px;
+    right: 5px;
+    background-color: #949EAA;
+    z-index: -1;
+    transition: transform .2s ease-in-out;
 }
-#logo-t:hover{
 
+.buttonOverlay::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #474E51;
 }
-a:visited {
-  color:"#55586B"
+
+.buttonOverlay:hover::before {
+    transform: translate(6px, -4px);
+    background:rgb(58, 205, 221);
 }
-a:hover {
-  color: #0E0F14;
-}
+
 </style>
 <script>
 export default {
-  data: () => ({
-    activeItem: 0
-  })
+ data:()=>({
+  activeItem: 0,
+  navbarType: "shadow",
+  navbarStyle: "background:#fff;box-shadow:0 0 0 #fff",
+  titleClass: "row m-0 px-4 align-items-center",
+})
 };
 </script>

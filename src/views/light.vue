@@ -1,34 +1,48 @@
 <template>
-  <div id="about" class="about container-fluid">
-    <div class="">
-      <vs-breadcrumb :items="item" separator="chevron_right"></vs-breadcrumb>
-      <!-- light-navbar -->
-      <div>
-        <vs-navbar class="nabarx pt-2 row m-0" color="#ffffff">
-          <div slot="title" class="col">
-            <vs-navbar-title
-              ><vs-button
-                line-position="bottom"
-                line-origin="left"
-                color="#268893"
-                type="filled"
-                >光源產品</vs-button
-              >&nbsp;&nbsp;•&nbsp;&nbsp;<vs-button
-                line-position="bottom"
-                line-origin="left"
-                color="#268893"
-                type="border"
-                ><router-link
-                  to="/component"
-                  style="color:#268893;text-decoration:none"
-                  >零組件產品</router-link
-                ></vs-button
-              ></vs-navbar-title
-            >
-          </div>
+  <div id="light" class="about">
+    <div>
+<!-- vs-breadcrumb -->
+<div class="row m-0 d-none d-lg-flex">
+    <div class="col mr-atuo"><h1>光源商品</h1></div>
+    <div class="row m-0">
+    <vs-icon icon="fingerprint" size="medium" bg="" class=""></vs-icon>
+    <vs-breadcrumb class="font" :items="item" separator="|"></vs-breadcrumb>
+    </div>
+</div>
+<!-- vs-breadcrumb end -->
+<div class="d-lg-none row m-0 flex-column mb-3">
+<div class="col row m-0 justify-content-center text-center">
+  <div class="col bg-secondary border p-2 text-light">光源商品</div>
+  <div class="col bg-light border p-2"><a href="#/component" class="text-dark">前往-零組件商品</a></div>
+</div>
+<div class="col" style="">
+  <vs-collapse open-hover>
+    <vs-collapse-item icon-arrow="">
+      <div slot="header"><vs-icon icon="wb_incandescent" class="ho"></vs-icon></div>
+      <br>
+      <div class="mmenu" v-on:click="all">光源 - 全部商品<hr class="hrs"/></div>
+      <div class="mmenu" v-on:click="P1">LED燈管燈泡</div>
+      <div class="mmenu" v-on:click="P2">LED櫥櫃嵌燈</div>
+      <div class="mmenu" v-on:click="P3">LED投光燈具</div>
+      <div class="mmenu" v-on:click="P4">省電燈管燈泡</div>
+      <div class="mmenu" v-on:click="P5">鹵素燈管燈泡</div>
+      <div class="mmenu" v-on:click="P6">鎢絲燈管燈泡</div>
+      <div class="mmenu " v-on:click="P7">螢光燈管系列</div>
+      <div class="mmenu" v-on:click="P8">HID燈泡燈管</div>
+      <div class="mmenu" v-on:click="P9">醫療系列</div>
+      <div class="mmenu" v-on:click="P10">影視舞台專用</div>
+      <div class="mmenu" v-on:click="P11">一般燈具</div>
+      <div class="mmenu"><vs-icon icon="call_made"></vs-icon></div>
+    </vs-collapse-item>
+  </vs-collapse>
+</div>
+</div>
+      <!--big light-navbar -->
+        <div>
+        <vs-navbar id="navbar" class="nabarx pt-2 row m-0 d-none d-lg-flex">
           <vs-navbar-item index="0">
             <vs-button :class="btns" :color="btnc" :type="btnt" v-on:click="all"
-              >光源 - 全部產品</vs-button
+              >光源 - 全部商品</vs-button
             >
           </vs-navbar-item>
           <vs-navbar-item index="1">
@@ -89,24 +103,27 @@
         </vs-navbar>
       </div>
     </div>
+    <!-- <vs-icon icon="highlight" size="medium"></vs-icon> -->
+    <br><br>
+    <h3 id="list"></h3>
     <div class="container-fluid row">
       <div class="col-md-9 col">
         <table>
           <thead>
             <!-- v-for使用 -->
             <!-- <tr>
-          <th>產品類別</th>
+          <th>商品類別</th>
           <th>樣式</th>
           <th>名稱</th>
           <th>說明</th>
           </tr> -->
             <tr>
               <th>
-                <div id="title" class="row m-0 flex-column flex-md-row">
-                  <div class="col">產品類別</div>
-                  <div class="col">樣式</div>
-                  <div class="col">名稱</div>
-                  <div class="col">說明</div>
+                <div id="ltitle" class="row m-0 d-none d-lg-flex">
+                  <div class="col"><h5>商品類別</h5></div>
+                  <div class="col"><h5>樣式</h5></div>
+                  <div class="col"><h5>名稱</h5></div>
+                  <div class="col"><h5>說明</h5></div>
                 </div>
               </th>
             </tr>
@@ -130,33 +147,97 @@
     </div>
   </div>
 </template>
-<style>
-div {
+<style scoped>
+hr.hrs{
+  border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+}
+.mmenu{
+  color:#7d7c85;
+  background:#ebebeb86;
+  height:50px;
+  padding:20px 10px;
+  font-size:20px;
+  line-height:15px;
+  font-family: "Noto Sans TC", sans-serif;
+  text-align:center;
+}
+
+.ho{
+  transition:1s;
+   color: rgb(28, 29, 32);
+   animation-name:ho;
+   animation-fill-mode:forwards;
+   animation-duration:1s;
+   animation-timing-function:cubic-bezier(.02,1.95,.36,-0.13);
+   
+}
+@keyframes ho{
+  from{
+transform:scale(0)
+  }
+  to{
+transform:scale(2)
+  }
+}
+.ho:hover{
+filter:invert(1);
+}
+  a{
+    text-decoration:none;
+  }
+#light {
   font-family: "Noto Sans TC", sans-serif;
 }
-#title {
-  background: #252439;
+#ltitle {
+  border:1px solid #000;
   color: #ebebeb;
-  font-size: 15px;
   padding: 10px;
   text-align: center;
-  border-radius: 20px;
+  position:relative;
 }
-table {
-  width: 100%;
-  margin-top: 50px;
+#ltitle::before{
+  content:'';
+  position:absolute;
+  height:100%;
+  width:100%;
+  background: #7d7c85;
+  top:-10px;
+  left:10px;
+  z-index:-1;
 }
-td {
-  border-bottom: 1px solid rgb(165, 165, 165);
-  padding-top: 50px;
-  padding-bottom: 20px;
+#list{
+  border:1px solid #000;
+  color: #2D354B;
+  font-weight:bolder;
+  padding: 10px;
   text-align: center;
+  position:relative;
+  white-space:nowrap;
+  width:50px;
+  height:50px;
 }
-table img {
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  max-height: 100%;
+#list::before{
+content:"";
+width:100%;
+height:100%;
+position:absolute;
+top:-15px;
+left:-15px;
+background:#3ACEDD
+;
+z-index:-1
+}
+#navbar{
+box-shadow:0 0 0 #fff;
+}
+.font{
+    font-weight:bolder;
+    font-family: "Noto Sans TC", sans-serif;
+}
+h1{
+    font-family: "Noto Sans TC", sans-serif;
 }
 </style>
 <script>
@@ -172,20 +253,21 @@ export default {
   },
   data() {
     let events = [];
-    let btns = "m-1";
-    let btnc = "#268893";
-    let btnt = "flat";
-    let item = [
-      { title: "首頁", url: "#/idx" },
-      { title: "產品介紹", url: "#/light", disabled: true },
-      { title: "光源產品", url: "#/light", disabled: true }
+    let btns = "m-1 col";
+    let btnc = "#2D354B";
+    let btnt = "line";
+let item = [
+      { title: "Product", url: "#/product", disabled: true },
+      { title: "光源商品", url: "#/light", disabled: true },
+      { title: "零組件商品", url: "#/component"},
     ];
     return {
       events,
       btns,
       btnc,
       btnt,
-      item
+      item,
+      activeItem: 0
     };
   },
   created() {
@@ -237,6 +319,7 @@ export default {
           var c = document.getElementById("a3");
           // console.log(c);
           c.innerHTML = b;
+          document.getElementById("list").innerText = "全部光源商品"
         });
     },
     P1: function() {
@@ -262,6 +345,7 @@ export default {
           var c = document.getElementById("a3");
           // console.log(c);
           c.innerHTML = b;
+          var d = document.getElementById("list").innerText = a[0]["type"];
         });
     },
     P2: function() {
@@ -287,6 +371,7 @@ export default {
           var c = document.getElementById("a3");
           // console.log(c);
           c.innerHTML = b;
+          var d = document.getElementById("list").innerText = a[0]["type"];
         });
     },
     P3: function() {
@@ -312,6 +397,7 @@ export default {
           var c = document.getElementById("a3");
           // console.log(c);
           c.innerHTML = b;
+var d = document.getElementById("list").innerText = a[0]["type"];
         });
     },
     P4: function() {
@@ -337,6 +423,7 @@ export default {
           var c = document.getElementById("a3");
           // console.log(c);
           c.innerHTML = b;
+ var d = document.getElementById("list").innerText = a[0]["type"];
         });
     },
     P5: function() {
@@ -362,6 +449,7 @@ export default {
           var c = document.getElementById("a3");
           // console.log(c);
           c.innerHTML = b;
+var d = document.getElementById("list").innerText = a[0]["type"];
         });
     },
     P6: function() {
@@ -387,6 +475,7 @@ export default {
           var c = document.getElementById("a3");
           // console.log(c);
           c.innerHTML = b;
+var d = document.getElementById("list").innerText = a[0]["type"];
         });
     },
     P7: function() {
@@ -412,6 +501,7 @@ export default {
           var c = document.getElementById("a3");
           // console.log(c);
           c.innerHTML = b;
+var d = document.getElementById("list").innerText = a[0]["type"];
         });
     },
     P8: function() {
@@ -437,6 +527,7 @@ export default {
           var c = document.getElementById("a3");
           // console.log(c);
           c.innerHTML = b;
+var d = document.getElementById("list").innerText = a[0]["type"];
         });
     },
     P9: function() {
@@ -462,6 +553,7 @@ export default {
           var c = document.getElementById("a3");
           // console.log(c);
           c.innerHTML = b;
+var d = document.getElementById("list").innerText = a[0]["type"];
         });
     },
     P10: function() {
@@ -487,6 +579,7 @@ export default {
           var c = document.getElementById("a3");
           // console.log(c);
           c.innerHTML = b;
+var d = document.getElementById("list").innerText = a[0]["type"];
         });
     },
     P11: function() {
@@ -512,6 +605,7 @@ export default {
           var c = document.getElementById("a3");
           // console.log(c);
           c.innerHTML = b;
+var d = document.getElementById("list").innerText = a[0]["type"];
         });
     }
   }
