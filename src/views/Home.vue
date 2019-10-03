@@ -79,8 +79,8 @@ top:50%;
 #cwlc::before{
   content:"";
   position:absolute;
-  top:5vh;
-  left:-5%;
+  top:3vh;
+  left:-4%;
   background:#3ACEDD;
   height:10vh;
   width:10vh;
@@ -107,9 +107,10 @@ top:50%;
   z-index:0;
 }
 #cwlc h1{
+  margin-left:25px;
   z-index:2;
   color:#33322D;
-  font-size:8vh;
+  font-size:5.5vh;
   font-weight:bolder;
   font-family: 'Syncopate';
 }

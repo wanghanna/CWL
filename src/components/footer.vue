@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid main row flex-column flex-md-row mb-2 m-0">
+  <div class="container-fluid main row mb-2 m-0">
     <div class="container-fluid col-md-8 row flex-column flex-md-row m-0">
       <div class="col">
         <h6><b>CHEN WEI LIGHTING</b></h6>
@@ -45,7 +45,7 @@
 }
 h6 {
   color: #EBEBEB;
-  font-family: "Teko", sans-serif;
+  font-family: "Noto Sans TC", sans-serif;
   font-size: 20px;
   text-align: start;
 }

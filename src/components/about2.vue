@@ -105,11 +105,12 @@
 h3 {
   font-family: "Noto Sans TC", sans-serif;
   font-weight:bolder;
-  color:#33322E
+  color:#33322E;
+  font-size:2vh;
 }
 .f1 {
   font-family: "Noto Sans TC", sans-serif;
-  font-size: 20px;
+  font-size: 1.8vh;
   color:#33322E;
 }
 ul {

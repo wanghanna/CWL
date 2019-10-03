@@ -1,6 +1,6 @@
 <template>
   <div id="a1" class="container">
-    <div class="row flex-lg-row flex-column align-items-center justify-content-center"><vs-icon icon="blur_on" size="large" color="#3ACEDD" class="mr-3"></vs-icon><h3>辰偉照明股份有限公司</h3>&nbsp;
+    <div class="row flex-lg-row flex-column align-items-center justify-content-center"><vs-icon icon="blur_on" size="large" color="#3ACEDD" class="mr-3"></vs-icon><h1>辰偉照明股份有限公司</h1>&nbsp;
 <h5 class="eng">•&nbsp;Chen Wei Lighting Co., Ltd</h5></div>
 <hr class="styleT">
 <br>
@@ -23,17 +23,17 @@
       <br>
       <ul class="row flex-column flex-md-row m-0">
     <li class="mr-5"><h4>聯絡電話</h4></li>
-    <li><h5><vs-icon icon="ring_volume" size="medium" color="#33322E" class="mr-3"></vs-icon>07-2382383</h5><h6>+886-7-2382383</h6></li>
+    <li><h5><vs-icon icon="ring_volume" size="small" color="#33322E" class="mr-3"></vs-icon>07-2382383</h5><h6>+886-7-2382383</h6></li>
   </ul>
     <br>
       <ul class="row flex-column flex-md-row m-0">
     <li class="mr-5"><h4>傳真號碼</h4></li>
-    <li><h5><vs-icon icon="local_printshop" size="medium" color="#33322E" class="mr-3"></vs-icon>07-2382385</h5><h6>+886-7-2382385</h6></li>
+    <li><h5><vs-icon icon="local_printshop" size="small" color="#33322E" class="mr-3"></vs-icon>07-2382385</h5><h6>+886-7-2382385</h6></li>
   </ul>
       <br>
       <ul class="row flex-column flex-md-row m-0">
     <li class="mr-5"><h4>電子郵件</h4></li>
-    <li><h5><vs-icon icon="email" size="medium" color="#33322E" class="mr-3"></vs-icon>chenweilight@yahoo.com.tw</h5></li>
+    <li><h5><vs-icon icon="email" size="small" color="#33322E" class="mr-3"></vs-icon>chenweilight@yahoo.com.tw</h5></li>
   </ul>
 </div>
   </div>
@@ -47,11 +47,17 @@ ul{
     height: 1.2px;
     background-image: linear-gradient(to right, transparent, #7C7B79, transparent);
 }
+h1{
+  font-family: "Noto Sans TC", sans-serif;
+  font-size:2vh;
+}
 h3,h4,h5{
   font-family: "Noto Sans TC", sans-serif;
+  font-size:1.5vh;
 }
 h6{
-  font-family: 'Syncopate';
+  font-family: "Noto Sans TC", sans-serif;
+  font-size:1vh;
 
 }
 .eng{
