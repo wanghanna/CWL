@@ -18,7 +18,7 @@
     <div class="d-lg-none">
     <div id="small" class="bg-info row m-0 align-items-center">
       <vs-icon id="smalla" icon="menu" size="medium" class="ml-3 mr-auto" @click="cols = !cols"></vs-icon>
-      <span style="color:#eaeaea;font-weight:bolder;font-size:30px">辰偉照明</span>
+      <span style="color:#eaeaea;font-weight:bolder;font-size:20px">辰偉照明</span>
       <router-link to="/"><span class="px-4"><img src="../assets/LOGO_Lamp.svg" style="width:50px;" class="timg"></span></router-link>
     </div>
       <div id="menu" v-if="cols">
@@ -39,7 +39,6 @@
 <style scoped>
 #smalla{
 transition:0.5s;
-border-radius:50%;
 color:#000;
 cursor:pointer;
 }
@@ -47,7 +46,7 @@ cursor:pointer;
 color:#d1d1d1;
 }
 #small{
-  height:100px;
+  height:90px;
   background:linear-gradient(to bottom, #17A2B8 50%,#6C757D 50%);
 }
 .timg{
