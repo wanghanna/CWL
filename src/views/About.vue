@@ -3,12 +3,13 @@
     <div>
       <div class="row m-0">
         <div class="col mr-auto"></div>
+        <div class="row m-0">
       <vs-icon icon="fingerprint" size="medium" bg=""></vs-icon>
     <vs-breadcrumb
       :items="item"
       class="break font"
       separator="|"
-    ></vs-breadcrumb>
+    ></vs-breadcrumb></div>
     </div>
     <br id="a1" /><br /><br><br><br>
     <div>
@@ -78,10 +79,6 @@ export default {
   data() {
     return {
       item: [
-        {
-          title: "Home",
-          url: "#/idx"
-        },
         {
           title: "Company",
           url: "#/about",

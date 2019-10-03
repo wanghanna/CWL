@@ -1,31 +1,120 @@
 <template>
-  <div id="about" class="about container-fluid">
-              <!-- vs-breadcrumb -->
-<div class="row m-0">
+  <div id="light" class="about">
+<!-- vs-breadcrumb -->
+<div class="row m-0 d-none d-lg-flex">
     <div class="col mr-atuo"><h1>零組件商品</h1></div>
     <div class="row m-0">
     <vs-icon icon="fingerprint" size="medium" bg="" class=""></vs-icon>
     <vs-breadcrumb class="font" :items="item" separator="|"></vs-breadcrumb>
     </div>
-<!-- vs-breadcrumb end -->
 </div>
-          <vs-navbar>
-          <vs-navbar-item index="0">
-            <vs-button
-              :class="btns"
-              :color="btnc" :type="btnt"
-              v-on:click="all"
-              >零組件 - 全部商品</vs-button
-            >
-          </vs-navbar-item>
-          </vs-navbar>
-          <!-- content -->
-          <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium asperiores aliquam rerum eius iusto adipisci suscipit et dolor maiores, eveniet placeat doloremque odit quas amet eum enim sed quod praesentium. Unde architecto labore fugiat vitae nihil in sint libero facilis, expedita suscipit doloremque repellendus tempore ea, numquam, maxime ullam? Quisquam quis quidem harum nesciunt similique, voluptatibus ut saepe fuga amet mollitia praesentium quasi consequuntur corporis accusantium expedita ullam facere dolorum cumque aperiam minima. Nulla esse minima minus cupiditate sint omnis veritatis dolorem perferendis voluptatem atque nostrum laborum labore animi velit placeat, corrupti similique. Laboriosam odit labore cum error cupiditate non, ullam consequuntur pariatur cumque doloribus corrupti fuga harum unde sint enim amet explicabo architecto molestias vel sequi numquam. Illo accusamus qui placeat, alias facilis ea voluptas sed blanditiis velit saepe assumenda fuga. Perspiciatis quis impedit ea earum dolorum voluptates pariatur adipisci voluptate? Nam ducimus corrupti fugiat, ea natus itaque rerum molestias! Hic, soluta tempore facere fugit minima suscipit voluptatibus quam aliquam tenetur quidem odit, repellendus sequi maxime magnam laboriosam cupiditate adipisci, inventore delectus! Facilis, totam! Perspiciatis repudiandae maxime ab tempore? Dolorum quidem quod magnam quia reiciendis obcaecati dicta reprehenderit ad consequatur quae exercitationem nisi officiis corporis dolorem, commodi, tempora deleniti doloremque aut distinctio assumenda omnis esse! Accusamus, cumque. Atque accusamus dolor recusandae molestiae quos officiis aperiam quidem delectus deleniti illum vel perspiciatis nobis adipisci eius ad neque itaque aliquam aspernatur sed fuga molestias repellendus, nesciunt labore minus! Doloribus iure minima quibusdam ea, voluptatem at accusantium deserunt vitae minus, perspiciatis deleniti nam iusto reiciendis! Temporibus magni suscipit quam commodi illum exercitationem labore, quos beatae fugiat omnis incidunt natus adipisci quisquam rerum inventore fuga animi perferendis? Vitae natus enim, iure quidem eaque iste temporibus ullam ad provident, odio sint. Aspernatur, nulla ullam et eos rerum laboriosam minima adipisci? Ea incidunt itaque consectetur cupiditate asperiores quas, odio error provident porro, ipsam delectus distinctio veniam tempora fugit reiciendis minus dolor facere? Ad unde alias, iure, blanditiis veniam atque adipisci asperiores nesciunt minima maxime itaque architecto nobis. Odit debitis voluptates ullam ducimus eaque facilis magnam dignissimos, cum dolor libero dolorem fugit harum sint pariatur aspernatur, praesentium at ab doloribus quisquam cupiditate facere corporis adipisci quasi ut. Exercitationem odit dignissimos, quod quos aliquam dolor dolorum. Iusto suscipit blanditiis ut atque nesciunt! Corrupti cumque nam nobis ut omnis, error labore, molestiae voluptate quod quisquam, assumenda dolor. Harum cum similique, doloribus nihil consequatur libero, saepe nam dicta quia numquam vero? Consequuntur, iure pariatur? Quibusdam optio molestias perspiciatis mollitia labore delectus debitis temporibus laudantium tempore libero dolore, commodi aperiam doloremque et amet alias corrupti corporis. Voluptatum eveniet, ipsa rem, mollitia dolorem corporis error perferendis iusto, quidem illum odit deleniti. Iure velit ea officiis vero. Excepturi, possimus deserunt, similique consequatur accusamus vero, obcaecati sunt officiis nisi atque fugit voluptate cumque perspiciatis asperiores doloremque ea quis enim soluta ad sequi! Repellat, voluptatibus doloribus obcaecati nostrum minima eius facere provident exercitationem quidem laboriosam iure harum assumenda earum odit, facilis qui iusto fugit omnis nesciunt illo similique. Expedita velit corporis neque in nisi?
-          </div>
+<!-- vs-breadcrumb end --> 
+<!-- small_nav    -->
+<div class="d-lg-none row m-0 flex-column mb-3">
+<div class="col row m-0 justify-content-center text-center">
+  <div class="col bg-light border p-2"><a href="#/light" class="text-dark">前往 - 光源商品</a></div>
+  <div class="col bg-secondary border p-2"><a href="#/component" class="text-light">零組件商品</a></div>
+</div>
+<div class="col" style="">
+  <vs-collapse open-hover>
+    <vs-collapse-item icon-arrow="">
+      <div slot="header" style="text-align:end"><vs-icon icon="wb_incandescent" class="ho"></vs-icon></div>
+      <br>
+      <div class="mmenu">零組件 - 全部商品<hr class="hrs"/></div>
+      <div class="mmenu">check now</div>
+      <div class="mmenu"><vs-icon icon="call_made"></vs-icon></div>
+    </vs-collapse-item>
+  </vs-collapse>
+</div>
+</div>
+<!-- small_nav_end -->
       </div>
 </template>
 <style scoped>
+hr.hrs{
+  border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+}
+.mmenu{
+  color:#7d7c85;
+  background:#ebebeb86;
+  height:50px;
+  padding:20px 10px;
+  font-size:20px;
+  line-height:15px;
+  font-family: "Noto Sans TC", sans-serif;
+  text-align:center;
+}
+
+.ho{
+  transition:1s;
+   color: rgb(28, 29, 32);
+   animation-name:ho;
+   animation-fill-mode:forwards;
+   animation-duration:1s;
+   animation-timing-function:cubic-bezier(.02,1.95,.36,-0.13);
+   
+}
+@keyframes ho{
+  from{
+transform:scale(0)
+  }
+  to{
+transform:scale(2)
+  }
+}
+.ho:hover{
+filter:invert(1);
+}
+  a{
+    text-decoration:none;
+  }
+#light {
+  font-family: "Noto Sans TC", sans-serif;
+}
+#ltitle {
+  border:1px solid #000;
+  color: #ebebeb;
+  padding: 10px;
+  text-align: center;
+  position:relative;
+}
+#ltitle::before{
+  content:'';
+  position:absolute;
+  height:100%;
+  width:100%;
+  background: #7d7c85;
+  top:-10px;
+  left:10px;
+  z-index:-1;
+}
+#list{
+  border:1px solid #000;
+  color: #2D354B;
+  font-weight:bolder;
+  padding: 10px;
+  text-align: center;
+  position:relative;
+  white-space:nowrap;
+  width:50px;
+  height:50px;
+}
+#list::before{
+content:"";
+width:100%;
+height:100%;
+position:absolute;
+top:-15px;
+left:-15px;
+background:#3ACEDD
+;
+z-index:-1
+}
+#navbar{
+box-shadow:0 0 0 #fff;
+}
 .font{
     font-weight:bolder;
     font-family: "Noto Sans TC", sans-serif;
@@ -42,9 +131,9 @@ export default {
     let btnc = "#268893";
     let btnt = "flat";
  let item = [
-      { title: "Home", url: "#/idx" },
-      { title: "Product(光源商品)", url: "#/light"},
-      { title: "Product(零組件商品)", url: "#/component",disabled: true},
+      { title: "Product", url: "#/product",disabled: true },
+      { title: "光源商品", url: "#/light"},
+      { title: "零組件商品", url: "#/component",disabled: true},
     ];
     return{
       btns,

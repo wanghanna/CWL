@@ -1,15 +1,15 @@
 <template>
   <div id="light" class="about">
     <div>
-          <!-- vs-breadcrumb -->
+<!-- vs-breadcrumb -->
 <div class="row m-0 d-none d-lg-flex">
     <div class="col mr-atuo"><h1>光源商品</h1></div>
     <div class="row m-0">
     <vs-icon icon="fingerprint" size="medium" bg="" class=""></vs-icon>
     <vs-breadcrumb class="font" :items="item" separator="|"></vs-breadcrumb>
     </div>
-<!-- vs-breadcrumb end -->
 </div>
+<!-- vs-breadcrumb end -->
 <div class="d-lg-none row m-0 flex-column mb-3">
 <div class="col row m-0 justify-content-center text-center">
   <div class="col bg-secondary border p-2 text-light">光源商品</div>
@@ -37,7 +37,7 @@
   </vs-collapse>
 </div>
 </div>
-      <!-- light-navbar -->
+      <!--big light-navbar -->
         <div>
         <vs-navbar id="navbar" class="nabarx pt-2 row m-0 d-none d-lg-flex">
           <vs-navbar-item index="0">
@@ -257,9 +257,9 @@ export default {
     let btnc = "#2D354B";
     let btnt = "line";
 let item = [
-      { title: "Home", url: "#/idx" },
-      { title: "Product(光源商品)", url: "#/light", disabled: true },
-      { title: "Product(零組件商品)", url: "#/component"},
+      { title: "Product", url: "#/product", disabled: true },
+      { title: "光源商品", url: "#/light", disabled: true },
+      { title: "零組件商品", url: "#/component"},
     ];
     return {
       events,

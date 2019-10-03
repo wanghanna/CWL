@@ -1,11 +1,17 @@
 <template>
   <div>
       <div>
-        <vs-breadcrumb
-          :items="item"
-          class="break"
-          separator="•"
-        ></vs-breadcrumb>
+      <div class="row m-0">
+        <div class="col mr-auto"></div>
+        <div class="row m-0">
+      <vs-icon icon="fingerprint" size="medium" bg=""></vs-icon>
+    <vs-breadcrumb
+      :items="item"
+      class="break font"
+      separator="|"
+    ></vs-breadcrumb>
+    </div>
+    </div>
         <div class="container">
           <br id="k0" /><br /><br /><br /><br />
           <vs-divider><h3>何謂光源</h3></vs-divider>
@@ -25,6 +31,14 @@
       </div>
   </div>
 </template>
+<style scoped>
+.break {
+  font-family: "Noto Sans TC", sans-serif;
+}
+.font{
+    font-weight:bolder;
+}
+</style>
 <script>
 import k0 from "@/components/k0.vue";
 import k1 from "@/components/k1.vue";
@@ -41,11 +55,7 @@ export default {
     return {
       item: [
         {
-          title: "首頁",
-          url: "#/idx"
-        },
-        {
-          title: "了解光源",
+          title: "About Light",
           url: "#/knowledge",
           disabled: true
         },
