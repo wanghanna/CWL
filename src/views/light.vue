@@ -286,7 +286,7 @@ let item = [
           b +=
             "<tr><td><div class='row flex-column flex-md-row'><div class='col'>" +
             a[i]["type"] +
-            "</div><div class='col'><img src='http://220.128.133.15/s1080214/project/dist/img/" +
+            "</div><div class='col'><img src='http://220.128.133.15/s1080214/project/CWL_T/upload/" +
             a[i]["pic"] +
             "'/></div><div class='col'>" +
             a[i]["name"] +
@@ -312,7 +312,7 @@ let item = [
             b +=
               "<tr><td><div class='row flex-column flex-md-row'><div class='col'>" +
               a[i]["type"] +
-              "</div><div class='col'><img src='http://220.128.133.15/s1080214/project/dist/img/" +
+              "</div><div class='col'><img src='http://220.128.133.15/s1080214/project/CWL_T/upload/" +
               a[i]["pic"] +
               "'/></div><div class='col'>" +
               a[i]["name"] +
@@ -338,7 +338,7 @@ let item = [
             b +=
               "<tr><td><div class='row flex-column flex-md-row'><div class='col'>" +
               a[i]["type"] +
-              "</div><div class='col'><img src='http://220.128.133.15/s1080214/project/dist/img/" +
+              "</div><div class='col'><img src='http://220.128.133.15/s1080214/project/CWL_T/upload/" +
               a[i]["pic"] +
               "'/></div><div class='col'>" +
               a[i]["name"] +
@@ -364,7 +364,7 @@ let item = [
             b +=
               "<tr><td><div class='row flex-column flex-md-row'><div class='col'>" +
               a[i]["type"] +
-              "</div><div class='col'><img src='http://220.128.133.15/s1080214/project/dist/img/" +
+              "</div><div class='col'><img src='http://220.128.133.15/s1080214/project/CWL_T/upload/" +
               a[i]["pic"] +
               "'/></div><div class='col'>" +
               a[i]["name"] +
@@ -390,7 +390,7 @@ let item = [
             b +=
               "<tr><td><div class='row flex-column flex-md-row'><div class='col'>" +
               a[i]["type"] +
-              "</div><div class='col'><img src='http://220.128.133.15/s1080214/project/dist/img/" +
+              "</div><div class='col'><img src='http://220.128.133.15/s1080214/project/CWL_T/upload/" +
               a[i]["pic"] +
               "'/></div><div class='col'>" +
               a[i]["name"] +
@@ -416,7 +416,7 @@ var d = document.getElementById("list").innerText = a[0]["type"];
             b +=
               "<tr><td><div class='row flex-column flex-md-row'><div class='col'>" +
               a[i]["type"] +
-              "</div><div class='col'><img src='http://220.128.133.15/s1080214/project/dist/img/img/" +
+              "</div><div class='col'><img src='http://220.128.133.15/s1080214/project/CWL_T/upload/" +
               a[i]["pic"] +
               "'/></div><div class='col'>" +
               a[i]["name"] +
@@ -442,7 +442,7 @@ var d = document.getElementById("list").innerText = a[0]["type"];
             b +=
               "<tr><td><div class='row flex-column flex-md-row'><div class='col'>" +
               a[i]["type"] +
-              "</div><div class='col'><img src='http://220.128.133.15/s1080214/project/dist/img/" +
+              "</div><div class='col'><img src='http://220.128.133.15/s1080214/project/CWL_T/upload/" +
               a[i]["pic"] +
               "'/></div><div class='col'>" +
               a[i]["name"] +
@@ -468,7 +468,7 @@ var d = document.getElementById("list").innerText = a[0]["type"];
             b +=
               "<tr><td><div class='row flex-column flex-md-row'><div class='col'>" +
               a[i]["type"] +
-              "</div><div class='col'><img src='http://220.128.133.15/s1080214/project/dist/img/" +
+              "</div><div class='col'><img src='http://220.128.133.15/s1080214/project/CWL_T/upload/" +
               a[i]["pic"] +
               "'/></div><div class='col'>" +
               a[i]["name"] +
@@ -494,7 +494,7 @@ var d = document.getElementById("list").innerText = a[0]["type"];
             b +=
               "<tr><td><div class='row flex-column flex-md-row'><div class='col'>" +
               a[i]["type"] +
-              "</div><div class='col'><img src='http://220.128.133.15/s1080214/project/dist/img/" +
+              "</div><div class='col'><img src='http://220.128.133.15/s1080214/project/CWL_T/upload/" +
               a[i]["pic"] +
               "'/></div><div class='col'>" +
               a[i]["name"] +
@@ -520,7 +520,7 @@ var d = document.getElementById("list").innerText = a[0]["type"];
             b +=
               "<tr><td><div class='row flex-column flex-md-row'><div class='col'>" +
               a[i]["type"] +
-              "</div><div class='col'><img src='http://220.128.133.15/s1080214/project/dist/img/" +
+              "</div><div class='col'><img src='http://220.128.133.15/s1080214/project/CWL_T/upload/" +
               a[i]["pic"] +
               "'/></div><div class='col'>" +
               a[i]["name"] +
@@ -546,7 +546,7 @@ var d = document.getElementById("list").innerText = a[0]["type"];
             b +=
               "<tr><td><div class='row flex-column flex-md-row'><div class='col'>" +
               a[i]["type"] +
-              "</div><div class='col'><img src='http://220.128.133.15/s1080214/project/dist/img/" +
+              "</div><div class='col'><img src='http://220.128.133.15/s1080214/project/CWL_T/upload/" +
               a[i]["pic"] +
               "'/></div><div class='col'>" +
               a[i]["name"] +
@@ -572,7 +572,7 @@ var d = document.getElementById("list").innerText = a[0]["type"];
             b +=
               "<tr><td><div class='row flex-column flex-md-row'><div class='col'>" +
               a[i]["type"] +
-              "</div><div class='col'><img src='http://220.128.133.15/s1080214/project/dist/img/" +
+              "</div><div class='col'><img src='http://220.128.133.15/s1080214/project/CWL_T/upload/" +
               a[i]["pic"] +
               "'/></div><div class='col'>" +
               a[i]["name"] +
@@ -598,7 +598,7 @@ var d = document.getElementById("list").innerText = a[0]["type"];
             b +=
               "<tr><td><div class='row flex-column flex-md-row'><div class='col'>" +
               a[i]["type"] +
-              "</div><div class='col'><img src='http://220.128.133.15/s1080214/project/dist/img/" +
+              "</div><div class='col'><img src='http://220.128.133.15/s1080214/project/CWL_T/upload/" +
               a[i]["pic"] +
               "'/></div><div class='col'>" +
               a[i]["name"] +
