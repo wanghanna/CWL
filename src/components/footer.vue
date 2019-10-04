@@ -73,7 +73,7 @@ export default {
   methods:{
     go: function(){
       // window.location.href = "http://220.128.133.15/s1080214/project/www_backside/admin.php"
-      window.location.href = "http://127.0.0.1/myvue/vue2_backside/www_backside/admin.php"
+      window.location.href = "http://127.0.0.1/gitkaren/CWL_T/CWL_T/admin.php"
     }
   }
 };
