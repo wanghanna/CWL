@@ -29,14 +29,16 @@
 </template>
 <style scoped>
 .cardS{
-  font-family: "Noto Sans TC", sans-serif;
-  margin:5px;
+  box-shadow:inset 10px 10px 30px rgba(170, 170, 170, 0.295),inset -20px -20px 10px rgb(241, 241, 241);
+  border-radius:20px;
+  margin:20px;
   transition:1s;
 }
 .cardS:hover{
-  transform:scale(0.9);
-  box-shadow:inset 10px 10px 30px rgba(170, 170, 170, 0.295),inset -20px -20px 10px rgb(241, 241, 241);
-  border-radius:20px;
+  font-family: "Noto Sans TC", sans-serif;
+  border-radius:0px;
+  transform:scale(1.1);
+
 }
 .cardS img{
 width:20vh;
