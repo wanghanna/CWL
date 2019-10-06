@@ -38,6 +38,7 @@
   font-family: "Noto Sans TC", sans-serif;
   border-radius:0px;
   transform:scale(1.1);
+  margin:20px 0;
 
 }
 .cardS img{
