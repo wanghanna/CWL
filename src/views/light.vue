@@ -302,7 +302,7 @@ let item = [
   methods: {
     all: function() {
       this.axios
-        .get("http://220.128.133.15/s1080214/project/axios.php?do=p0")
+        .get("http://220.128.133.15/s1080214/project/axios.php?do=0")
         .then(response => {
           this.events = response.data;
           // console.log(response.data);
@@ -328,7 +328,7 @@ let item = [
     },
     P1: function() {
       this.axios
-        .get("http://220.128.133.15/s1080214/project/axios.php?do=p1")
+        .get("http://220.128.133.15/s1080214/project/axios.php?do=1")
         .then(response => {
           this.events = response.data;
           // console.log(response.data);
@@ -354,7 +354,7 @@ let item = [
     },
     P2: function() {
       this.axios
-        .get("http://220.128.133.15/s1080214/project/axios.php?do=p2")
+        .get("http://220.128.133.15/s1080214/project/axios.php?do=2")
         .then(response => {
           this.events = response.data;
           // console.log(response.data);
@@ -380,7 +380,7 @@ let item = [
     },
     P3: function() {
       this.axios
-        .get("http://220.128.133.15/s1080214/project/axios.php?do=p3")
+        .get("http://220.128.133.15/s1080214/project/axios.php?do=3")
         .then(response => {
           this.events = response.data;
           // console.log(response.data);
@@ -406,7 +406,7 @@ var d = document.getElementById("list").innerText = a[0]["type"];
     },
     P4: function() {
       this.axios
-        .get("http://220.128.133.15/s1080214/project/axios.php?do=p4")
+        .get("http://220.128.133.15/s1080214/project/axios.php?do=4")
         .then(response => {
           this.events = response.data;
           // console.log(response.data);
@@ -432,7 +432,7 @@ var d = document.getElementById("list").innerText = a[0]["type"];
     },
     P5: function() {
       this.axios
-        .get("http://220.128.133.15/s1080214/project/axios.php?do=p5")
+        .get("http://220.128.133.15/s1080214/project/axios.php?do=5")
         .then(response => {
           this.events = response.data;
           // console.log(response.data);
@@ -458,7 +458,7 @@ var d = document.getElementById("list").innerText = a[0]["type"];
     },
     P6: function() {
       this.axios
-        .get("http://220.128.133.15/s1080214/project/axios.php?do=p6")
+        .get("http://220.128.133.15/s1080214/project/axios.php?do=6")
         .then(response => {
           this.events = response.data;
           // console.log(response.data);
@@ -484,7 +484,7 @@ var d = document.getElementById("list").innerText = a[0]["type"];
     },
     P7: function() {
       this.axios
-        .get("http://220.128.133.15/s1080214/project/axios.php?do=p7")
+        .get("http://220.128.133.15/s1080214/project/axios.php?do=7")
         .then(response => {
           this.events = response.data;
           // console.log(response.data);
@@ -510,7 +510,7 @@ var d = document.getElementById("list").innerText = a[0]["type"];
     },
     P8: function() {
       this.axios
-        .get("http://220.128.133.15/s1080214/project/axios.php?do=p8")
+        .get("http://220.128.133.15/s1080214/project/axios.php?do=8")
         .then(response => {
           this.events = response.data;
           // console.log(response.data);
@@ -536,7 +536,7 @@ var d = document.getElementById("list").innerText = a[0]["type"];
     },
     P9: function() {
       this.axios
-        .get("http://220.128.133.15/s1080214/project/axios.php?do=p9")
+        .get("http://220.128.133.15/s1080214/project/axios.php?do=9")
         .then(response => {
           this.events = response.data;
           // console.log(response.data);
@@ -562,7 +562,7 @@ var d = document.getElementById("list").innerText = a[0]["type"];
     },
     P10: function() {
       this.axios
-        .get("http://220.128.133.15/s1080214/project/axios.php?do=p10")
+        .get("http://220.128.133.15/s1080214/project/axios.php?do=10")
         .then(response => {
           this.events = response.data;
           // console.log(response.data);
@@ -588,7 +588,7 @@ var d = document.getElementById("list").innerText = a[0]["type"];
     },
     P11: function() {
       this.axios
-        .get("http://220.128.133.15/s1080214/project/axios.php?do=p11")
+        .get("http://220.128.133.15/s1080214/project/axios.php?do=11")
         .then(response => {
           this.events = response.data;
           // console.log(response.data);
