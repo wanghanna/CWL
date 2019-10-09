@@ -11,35 +11,33 @@
         <vs-navbar-item index="0"><router-link to="/idx"><span class="mx-2 buttonOverlay">Home</span></router-link></vs-navbar-item>
          <vs-navbar-item index="1"><router-link to="/about"><span class="mx-2 buttonOverlay">關於辰偉</span></router-link></vs-navbar-item>
          <!-- light -->
-         <vs-navbar-item index="2">
+         <vs-navbar-item index="2" class="dropdown">
          <router-link to="/light">
-         <span class="mx-2 buttonOverlay" @click="ldop = !ldop">光源產品資訊</span></router-link>
-           <div v-if="ldop" class="py-2 position-absolute px-3 dop">
-           <div class="py-1" href="#/light" @click="all" v-on:click="ldop = !ldop" style="cursor:pointer"><router-link to="/light">全部光源產品</router-link></div>
+         <span class="mx-2 buttonOverlay dropbtn">光源產品資訊</span></router-link>
+           <div class="py-2 position-absolute px-3 dropdown-content">
+           <div class="py-1" href="#/light" @click="all" tyle="cursor:pointer"><router-link to="/light">全部光源產品</router-link></div>
            <hr class="styleT" />
-           <div class="py-1 ddop" @click="P1" v-on:click="ldop = !ldop"><router-link to="/light">省電燈管燈泡</router-link></div>
-           <div class="py-1 ddop" @click="P2" v-on:click="ldop = !ldop"><router-link to="/light">HID燈管燈泡</router-link></div>
-           <div class="py-1 ddop" @click="P3" v-on:click="ldop = !ldop"><router-link to="/light">鹵素光源</router-link></div>
-           <div class="py-1 ddop" @click="P4" v-on:click="ldop = !ldop"><router-link to="/light">影視舞台光源</router-link></div>
-           <div class="py-1 ddop" @click="P5" v-on:click="ldop = !ldop"><router-link to="/light">螢光燈管</router-link></div>
-           <div class="py-1 ddop" @click="P6" v-on:click="ldop = !ldop"><router-link to="/light">醫療光源</router-link></div>
-           <div class="py-1 ddop" @click="P7" v-on:click="ldop = !ldop"><router-link to="/light">鎢絲燈泡</router-link></div>
-           <div class="py-1 ddop" @click="P8" v-on:click="ldop = !ldop"><router-link to="/light">LED燈管燈泡</router-link></div>
-           <a href="#" class="text-center"><vs-icon color="#959595" icon="eject" size="small" @click="ldop = !ldop"></vs-icon></a>
+           <div class="py-1  " @click="P1" ><router-link to="/light">省電燈管燈泡</router-link></div>
+           <div class="py-1  " @click="P2" ><router-link to="/light">HID燈管燈泡</router-link></div>
+           <div class="py-1  " @click="P3" ><router-link to="/light">鹵素光源</router-link></div>
+           <div class="py-1  " @click="P4" ><router-link to="/light">影視舞台光源</router-link></div>
+           <div class="py-1  " @click="P5" ><router-link to="/light">螢光燈管</router-link></div>
+           <div class="py-1  " @click="P6" ><router-link to="/light">醫療光源</router-link></div>
+           <div class="py-1  " @click="P7" ><router-link to="/light">鎢絲燈泡</router-link></div>
+           <div class="py-1  " @click="P8" ><router-link to="/light">LED燈管燈泡</router-link></div>
          </div>        
          
          </vs-navbar-item>
           <!-- light-end -->
-         <vs-navbar-item index="3">
+         <vs-navbar-item index="3" class="dropdown">
          <router-link to="/component">
-         <span class="mx-2 buttonOverlay" @click="cdop = !cdop">燈具產品資訊</span></router-link>
-         <div v-if="cdop" class="py-2 position-absolute px-3 dop">
-           <div class="py-1" href="#/light" @click="all" v-on:click="cdop = !cdop" style="cursor:pointer"><router-link to="/light">全部燈具產品</router-link></div>
+         <span class="mx-2 buttonOverlay dropbtn" >燈具產品資訊</span></router-link>
+         <div class="py-2 position-absolute px-3 dropdown-content">
+           <div class="py-1" href="#/light" @click="all" style="cursor:pointer"><router-link to="/light">全部燈具產品</router-link></div>
            <hr class="styleT" />
-           <div class="py-1 ddop" @click="P1" v-on:click="cdop = !cdop"><router-link to="/light">一般燈具</router-link></div>
-           <div class="py-1 ddop" @click="P2" v-on:click="cdop = !cdop"><router-link to="/light">零配件</router-link></div>
-           <div class="py-1 ddop" @click="P3" v-on:click="cdop = !cdop"><router-link to="/light">LED燈具</router-link></div>
-           <a href="#" class="text-center"><vs-icon color="#959595" icon="eject" size="small" @click="cdop = !cdop"></vs-icon></a>
+           <div class="py-1  " @click="P1" ><router-link to="/light">一般燈具</router-link></div>
+           <div class="py-1  " @click="P2" ><router-link to="/light">零配件</router-link></div>
+           <div class="py-1  " @click="P3" ><router-link to="/light">LED燈具</router-link></div>
          </div>
          </vs-navbar-item>
          <vs-navbar-item index="3">
@@ -72,23 +70,41 @@
   </div>
 </template>
 <style scoped>
-.dop{
-width:200px;
-background:#D4D4D4;
-border:1px solid #e2e2e2;
-margin:20px 0 0 20px;
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
 }
-.dop a{
- font-weight:normal;
-font-size:2vh; 
+
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
-.ddop{
-  cursor:pointer;
-  transition:0.5s;
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
-.ddop:hover{
-  border-bottom:1.5px solid rgba(255, 255, 255, 0.5);
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
 }
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: transparent;}
+
 #smalla{
 transition:0.5s;
 color:#000;
@@ -181,8 +197,6 @@ export default {
   navbarStyle: "background:#fff;box-shadow:0 0 0 #fff",
   titleClass: "row m-0 px-4 align-items-center",
   cols: false,
-  ldop: false,
-  cdop: false
 }),
  methods: {
     all: function() {
