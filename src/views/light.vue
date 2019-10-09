@@ -1,15 +1,6 @@
 <template>
   <div id="light" class="about">
     <div>
-<!-- vs-breadcrumb -->
-<div class="row m-0 d-none d-lg-flex">
-    <div class="col mr-atuo"><h1>光源商品</h1></div>
-    <div class="row m-0">
-    <vs-icon icon="fingerprint" size="medium" bg="" class=""></vs-icon>
-    <vs-breadcrumb class="font" :items="item" separator="|"></vs-breadcrumb>
-    </div>
-</div>
-<!-- vs-breadcrumb end -->
 <div class="d-lg-none mb-3">
 <div class="col row m-0 justify-content-center text-center mb-3">
   <div class="col bg-info border p-2 text-light" style="height:50px">光源商品</div>
@@ -32,73 +23,8 @@
       <div class="mmenu" v-on:click="P11" @click="cols = !cols">一般燈具</div>
       <div class="mmenu"><a href="#"><vs-icon icon="eject" @click="cols = !cols" href="#"></vs-icon></a></div>
       </div>
+  </div>
 </div>
-      <!--big light-navbar -->
-        <div>
-        <vs-navbar id="navbar" class="nabarx pt-2 row m-0 d-none d-lg-flex">
-          <vs-navbar-item index="0">
-            <vs-button :class="btns" :color="btnc" :type="btnt" v-on:click="all"
-              >光源 - 全部商品</vs-button
-            >
-          </vs-navbar-item>
-          <vs-navbar-item index="1">
-            <vs-button :class="btns" :color="btnc" :type="btnt" v-on:click="P1"
-              >LED燈管燈泡</vs-button
-            >
-          </vs-navbar-item>
-          <vs-navbar-item index="2">
-            <vs-button :class="btns" :color="btnc" :type="btnt" v-on:click="P2"
-              >LED櫥櫃嵌燈</vs-button
-            >
-          </vs-navbar-item>
-          <vs-navbar-item index="3">
-            <vs-button :class="btns" :color="btnc" :type="btnt" v-on:click="P3"
-              >LED投光燈具</vs-button
-            >
-          </vs-navbar-item>
-          <vs-navbar-item index="4">
-            <vs-button :class="btns" :color="btnc" :type="btnt" v-on:click="P4"
-              >省電燈管燈泡</vs-button
-            >
-          </vs-navbar-item>
-          <vs-navbar-item index="5">
-            <vs-button :class="btns" :color="btnc" :type="btnt" v-on:click="P5"
-              >鹵素燈管燈泡</vs-button
-            >
-          </vs-navbar-item>
-          <vs-navbar-item index="6">
-            <vs-button :class="btns" :color="btnc" :type="btnt" v-on:click="P6"
-              >鎢絲燈管燈泡</vs-button
-            >
-          </vs-navbar-item>
-          <vs-navbar-item index="7">
-            <vs-button :class="btns" :color="btnc" :type="btnt" v-on:click="P7"
-              >螢光燈管系列</vs-button
-            >
-          </vs-navbar-item>
-          <vs-navbar-item index="8">
-            <vs-button :class="btns" :color="btnc" :type="btnt" v-on:click="P8"
-              >HID燈泡燈管</vs-button
-            >
-          </vs-navbar-item>
-          <vs-navbar-item index="9">
-            <vs-button :class="btns" :color="btnc" :type="btnt" v-on:click="P9"
-              >醫療系列</vs-button
-            >
-          </vs-navbar-item>
-          <vs-navbar-item index="10">
-            <vs-button :class="btns" :color="btnc" :type="btnt" v-on:click="P10"
-              >影視舞台專用</vs-button
-            >
-          </vs-navbar-item>
-          <vs-navbar-item index="11">
-            <vs-button :class="btns" :color="btnc" :type="btnt" v-on:click="P11"
-              >一般燈具</vs-button
-            >
-          </vs-navbar-item>
-        </vs-navbar>
-      </div>
-    </div>
     <!-- <vs-icon icon="highlight" size="medium"></vs-icon> -->
     <br><br>
     <h3 id="list"></h3>
@@ -113,16 +39,6 @@
           <th>名稱</th>
           <th>說明</th>
           </tr> -->
-            <tr>
-              <th>
-                <div id="ltitle" class="row m-0 d-none d-lg-flex">
-                  <div class="col"><h5>商品類別</h5></div>
-                  <div class="col"><h5>樣式</h5></div>
-                  <div class="col"><h5>名稱</h5></div>
-                  <div class="col"><h5>說明</h5></div>
-                </div>
-              </th>
-            </tr>
           </thead>
           <tbody id="a3">
             <!-- v-for使用 -->
@@ -284,15 +200,13 @@ let item = [
         let b = "";
         for (let i = 0; i < a.length; i++) {
           b +=
-            "<tr><td><div class='row flex-column flex-md-row'><div class='col'>" +
-            a[i]["type"] +
-            "</div><div class='col'><img src='http://220.128.133.15/s1080214/project/CWL_T/upload/" +
+            "<tr><td><div class='row flex-column flex-md-row'><div class='col-md-7'><img src='http://220.128.133.15/s1080214/project/CWL_T/upload/" +
             a[i]["pic"] +
-            "'/></div><div class='col'>" +
+            "'/></div><div class='col-md-5 bg-light'><div class='col mb-3 bg-secondary'>" +
             a[i]["name"] +
-            "</div><div class='col'>" +
+            "</div><div class='col bg-secondary'>" +
             a[i]["des"] +
-            "</div></div></td></tr>";
+            "</div></div></div></td></tr>";
         }
         var c = document.getElementById("a3");
         // console.log(c);
