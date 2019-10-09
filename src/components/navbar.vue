@@ -74,7 +74,6 @@
   background-color: transparent;
   color: white;
   padding: 16px;
-  font-size: 16px;
   border: none;
 }
 
@@ -86,20 +85,23 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  left:20px;
+  background:rgb(255, 255, 255);
+  min-width: 200px;
+  box-shadow:inset 0px 0px 20px rgba(207, 207, 207, 0.5);
   z-index: 1;
 }
 
 .dropdown-content a {
-  color: black;
+  font-size:2vh;
+  color: rgb(151, 151, 151);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  transition:0.3s;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {border:1px solid #7474748a;padding:10px;color:#000000}
 
 .dropdown:hover .dropdown-content {display: block;}
 
@@ -208,17 +210,15 @@ export default {
           let a = this.events;
           let b = "";
           for (let i = 0; i < a.length; i++) {
-            b +=
-              "<tr><td><div class='row flex-column flex-md-row'><div class='col'>" +
-              a[i]["type"] +
-              "</div><div class='col'><img src='http://220.128.133.15/s1080214/project/CWL_T/upload/" +
-              a[i]["pic"] +
-              "'/></div><div class='col'>" +
-              a[i]["name"] +
-              "</div><div class='col'>" +
-              a[i]["des"] +
-              "</div></div></td></tr>";
-          }
+b +=
+            "<tr><td><div class='container row m-0 p-0 flex-column flex-md-row' style='border:0.5px solid #dedede;'><div class='col-md-7'><img src='http://220.128.133.15/s1080214/project/CWL_T/upload/" +
+            a[i]["pic"] +
+            "'/></div><div class='col-md-5 p-3' style='box-shadow:-1px 1px 5px #ddd'><div class='col mb-3 text-right' style='font-size:2.5vh; color:#000;'>" +
+            a[i]["name"] +
+            "<hr style='border:0;height: 1.2px;background-image: linear-gradient(to right, transparent, #7C7B79, transparent)'/></div><div class='col text-left'>" +
+            a[i]["des"] +
+            "</div></div></div></td></tr>";
+        }
           var c = document.getElementById("a3");
           // console.log(c);
           c.innerHTML = b;
@@ -234,17 +234,15 @@ export default {
           let a = this.events;
           let b = "";
           for (let i = 0; i < a.length; i++) {
-            b +=
-              "<tr><td><div class='row flex-column flex-md-row'><div class='col'>" +
-              a[i]["type"] +
-              "</div><div class='col'><img src='http://220.128.133.15/s1080214/project/CWL_T/upload/" +
-              a[i]["pic"] +
-              "'/></div><div class='col'>" +
-              a[i]["name"] +
-              "</div><div class='col'>" +
-              a[i]["des"] +
-              "</div></div></td></tr>";
-          }
+b +=
+            "<tr><td><div class='container row m-0 p-0 flex-column flex-md-row' style='border:0.5px solid #dedede;'><div class='col-md-7'><img src='http://220.128.133.15/s1080214/project/CWL_T/upload/" +
+            a[i]["pic"] +
+            "'/></div><div class='col-md-5 p-3' style='box-shadow:-1px 1px 5px #ddd'><div class='col mb-3 text-right' style='font-size:2.5vh; color:#000;'>" +
+            a[i]["name"] +
+            "<hr style='border:0;height: 1.2px;background-image: linear-gradient(to right, transparent, #7C7B79, transparent)'/></div><div class='col text-left'>" +
+            a[i]["des"] +
+            "</div></div></div></td></tr>";
+        }
           var c = document.getElementById("a3");
           // console.log(c);
           c.innerHTML = b;
@@ -260,17 +258,15 @@ export default {
           let a = this.events;
           let b = "";
           for (let i = 0; i < a.length; i++) {
-            b +=
-              "<tr><td><div class='row flex-column flex-md-row'><div class='col'>" +
-              a[i]["type"] +
-              "</div><div class='col'><img src='http://220.128.133.15/s1080214/project/CWL_T/upload/" +
-              a[i]["pic"] +
-              "'/></div><div class='col'>" +
-              a[i]["name"] +
-              "</div><div class='col'>" +
-              a[i]["des"] +
-              "</div></div></td></tr>";
-          }
+                     b +=
+            "<tr><td><div class='container row m-0 p-0 flex-column flex-md-row' style='border:0.5px solid #dedede;'><div class='col-md-7'><img src='http://220.128.133.15/s1080214/project/CWL_T/upload/" +
+            a[i]["pic"] +
+            "'/></div><div class='col-md-5 p-3' style='box-shadow:-1px 1px 5px #ddd'><div class='col mb-3 text-right' style='font-size:2.5vh; color:#000;'>" +
+            a[i]["name"] +
+            "<hr style='border:0;height: 1.2px;background-image: linear-gradient(to right, transparent, #7C7B79, transparent)'/></div><div class='col text-left'>" +
+            a[i]["des"] +
+            "</div></div></div></td></tr>";
+        }
           var c = document.getElementById("a3");
           // console.log(c);
           c.innerHTML = b;
@@ -286,17 +282,15 @@ export default {
           let a = this.events;
           let b = "";
           for (let i = 0; i < a.length; i++) {
-            b +=
-              "<tr><td><div class='row flex-column flex-md-row'><div class='col'>" +
-              a[i]["type"] +
-              "</div><div class='col'><img src='http://220.128.133.15/s1080214/project/CWL_T/upload/" +
-              a[i]["pic"] +
-              "'/></div><div class='col'>" +
-              a[i]["name"] +
-              "</div><div class='col'>" +
-              a[i]["des"] +
-              "</div></div></td></tr>";
-          }
+                     b +=
+            "<tr><td><div class='container row m-0 p-0 flex-column flex-md-row' style='border:0.5px solid #dedede;'><div class='col-md-7'><img src='http://220.128.133.15/s1080214/project/CWL_T/upload/" +
+            a[i]["pic"] +
+            "'/></div><div class='col-md-5 p-3' style='box-shadow:-1px 1px 5px #ddd'><div class='col mb-3 text-right' style='font-size:2.5vh; color:#000;'>" +
+            a[i]["name"] +
+            "<hr style='border:0;height: 1.2px;background-image: linear-gradient(to right, transparent, #7C7B79, transparent)'/></div><div class='col text-left'>" +
+            a[i]["des"] +
+            "</div></div></div></td></tr>";
+        }
           var c = document.getElementById("a3");
           // console.log(c);
           c.innerHTML = b;
@@ -312,17 +306,15 @@ var d = document.getElementById("list").innerText = a[0]["type"];
           let a = this.events;
           let b = "";
           for (let i = 0; i < a.length; i++) {
-            b +=
-              "<tr><td><div class='row flex-column flex-md-row'><div class='col'>" +
-              a[i]["type"] +
-              "</div><div class='col'><img src='http://220.128.133.15/s1080214/project/CWL_T/upload/" +
-              a[i]["pic"] +
-              "'/></div><div class='col'>" +
-              a[i]["name"] +
-              "</div><div class='col'>" +
-              a[i]["des"] +
-              "</div></div></td></tr>";
-          }
+                      b +=
+            "<tr><td><div class='container row m-0 p-0 flex-column flex-md-row' style='border:0.5px solid #dedede;'><div class='col-md-7'><img src='http://220.128.133.15/s1080214/project/CWL_T/upload/" +
+            a[i]["pic"] +
+            "'/></div><div class='col-md-5 p-3' style='box-shadow:-1px 1px 5px #ddd'><div class='col mb-3 text-right' style='font-size:2.5vh; color:#000;'>" +
+            a[i]["name"] +
+            "<hr style='border:0;height: 1.2px;background-image: linear-gradient(to right, transparent, #7C7B79, transparent)'/></div><div class='col text-left'>" +
+            a[i]["des"] +
+            "</div></div></div></td></tr>";
+        }
           var c = document.getElementById("a3");
           // console.log(c);
           c.innerHTML = b;
@@ -338,17 +330,15 @@ var d = document.getElementById("list").innerText = a[0]["type"];
           let a = this.events;
           let b = "";
           for (let i = 0; i < a.length; i++) {
-            b +=
-              "<tr><td><div class='row flex-column flex-md-row'><div class='col'>" +
-              a[i]["type"] +
-              "</div><div class='col'><img src='http://220.128.133.15/s1080214/project/CWL_T/upload/" +
-              a[i]["pic"] +
-              "'/></div><div class='col'>" +
-              a[i]["name"] +
-              "</div><div class='col'>" +
-              a[i]["des"] +
-              "</div></div></td></tr>";
-          }
+                     b +=
+            "<tr><td><div class='container row m-0 p-0 flex-column flex-md-row' style='border:0.5px solid #dedede;'><div class='col-md-7'><img src='http://220.128.133.15/s1080214/project/CWL_T/upload/" +
+            a[i]["pic"] +
+            "'/></div><div class='col-md-5 p-3' style='box-shadow:-1px 1px 5px #ddd'><div class='col mb-3 text-right' style='font-size:2.5vh; color:#000;'>" +
+            a[i]["name"] +
+            "<hr style='border:0;height: 1.2px;background-image: linear-gradient(to right, transparent, #7C7B79, transparent)'/></div><div class='col text-left'>" +
+            a[i]["des"] +
+            "</div></div></div></td></tr>";
+        }
           var c = document.getElementById("a3");
           // console.log(c);
           c.innerHTML = b;
@@ -364,17 +354,15 @@ var d = document.getElementById("list").innerText = a[0]["type"];
           let a = this.events;
           let b = "";
           for (let i = 0; i < a.length; i++) {
-            b +=
-              "<tr><td><div class='row flex-column flex-md-row'><div class='col'>" +
-              a[i]["type"] +
-              "</div><div class='col'><img src='http://220.128.133.15/s1080214/project/CWL_T/upload/" +
-              a[i]["pic"] +
-              "'/></div><div class='col'>" +
-              a[i]["name"] +
-              "</div><div class='col'>" +
-              a[i]["des"] +
-              "</div></div></td></tr>";
-          }
+                      b +=
+            "<tr><td><div class='container row m-0 p-0 flex-column flex-md-row' style='border:0.5px solid #dedede;'><div class='col-md-7'><img src='http://220.128.133.15/s1080214/project/CWL_T/upload/" +
+            a[i]["pic"] +
+            "'/></div><div class='col-md-5 p-3' style='box-shadow:-1px 1px 5px #ddd'><div class='col mb-3 text-right' style='font-size:2.5vh; color:#000;'>" +
+            a[i]["name"] +
+            "<hr style='border:0;height: 1.2px;background-image: linear-gradient(to right, transparent, #7C7B79, transparent)'/></div><div class='col text-left'>" +
+            a[i]["des"] +
+            "</div></div></div></td></tr>";
+        }
           var c = document.getElementById("a3");
           // console.log(c);
           c.innerHTML = b;
@@ -390,17 +378,15 @@ var d = document.getElementById("list").innerText = a[0]["type"];
           let a = this.events;
           let b = "";
           for (let i = 0; i < a.length; i++) {
-            b +=
-              "<tr><td><div class='row flex-column flex-md-row'><div class='col'>" +
-              a[i]["type"] +
-              "</div><div class='col'><img src='http://220.128.133.15/s1080214/project/CWL_T/upload/" +
-              a[i]["pic"] +
-              "'/></div><div class='col'>" +
-              a[i]["name"] +
-              "</div><div class='col'>" +
-              a[i]["des"] +
-              "</div></div></td></tr>";
-          }
+                      b +=
+            "<tr><td><div class='container row m-0 p-0 flex-column flex-md-row' style='border:0.5px solid #dedede;'><div class='col-md-7'><img src='http://220.128.133.15/s1080214/project/CWL_T/upload/" +
+            a[i]["pic"] +
+            "'/></div><div class='col-md-5 p-3' style='box-shadow:-1px 1px 5px #ddd'><div class='col mb-3 text-right' style='font-size:2.5vh; color:#000;'>" +
+            a[i]["name"] +
+            "<hr style='border:0;height: 1.2px;background-image: linear-gradient(to right, transparent, #7C7B79, transparent)'/></div><div class='col text-left'>" +
+            a[i]["des"] +
+            "</div></div></div></td></tr>";
+        }
           var c = document.getElementById("a3");
           // console.log(c);
           c.innerHTML = b;
@@ -416,17 +402,15 @@ var d = document.getElementById("list").innerText = a[0]["type"];
           let a = this.events;
           let b = "";
           for (let i = 0; i < a.length; i++) {
-            b +=
-              "<tr><td><div class='row flex-column flex-md-row'><div class='col'>" +
-              a[i]["type"] +
-              "</div><div class='col'><img src='http://220.128.133.15/s1080214/project/CWL_T/upload/" +
-              a[i]["pic"] +
-              "'/></div><div class='col'>" +
-              a[i]["name"] +
-              "</div><div class='col'>" +
-              a[i]["des"] +
-              "</div></div></td></tr>";
-          }
+                      b +=
+            "<tr><td><div class='container row m-0 p-0 flex-column flex-md-row' style='border:0.5px solid #dedede;'><div class='col-md-7'><img src='http://220.128.133.15/s1080214/project/CWL_T/upload/" +
+            a[i]["pic"] +
+            "'/></div><div class='col-md-5 p-3' style='box-shadow:-1px 1px 5px #ddd'><div class='col mb-3 text-right' style='font-size:2.5vh; color:#000;'>" +
+            a[i]["name"] +
+            "<hr style='border:0;height: 1.2px;background-image: linear-gradient(to right, transparent, #7C7B79, transparent)'/></div><div class='col text-left'>" +
+            a[i]["des"] +
+            "</div></div></div></td></tr>";
+        }
           var c = document.getElementById("a3");
           // console.log(c);
           c.innerHTML = b;
@@ -442,17 +426,15 @@ var d = document.getElementById("list").innerText = a[0]["type"];
           let a = this.events;
           let b = "";
           for (let i = 0; i < a.length; i++) {
-            b +=
-              "<tr><td><div class='row flex-column flex-md-row'><div class='col'>" +
-              a[i]["type"] +
-              "</div><div class='col'><img src='http://220.128.133.15/s1080214/project/CWL_T/upload/" +
-              a[i]["pic"] +
-              "'/></div><div class='col'>" +
-              a[i]["name"] +
-              "</div><div class='col'>" +
-              a[i]["des"] +
-              "</div></div></td></tr>";
-          }
+                     b +=
+            "<tr><td><div class='container row m-0 p-0 flex-column flex-md-row' style='border:0.5px solid #dedede;'><div class='col-md-7'><img src='http://220.128.133.15/s1080214/project/CWL_T/upload/" +
+            a[i]["pic"] +
+            "'/></div><div class='col-md-5 p-3' style='box-shadow:-1px 1px 5px #ddd'><div class='col mb-3 text-right' style='font-size:2.5vh; color:#000;'>" +
+            a[i]["name"] +
+            "<hr style='border:0;height: 1.2px;background-image: linear-gradient(to right, transparent, #7C7B79, transparent)'/></div><div class='col text-left'>" +
+            a[i]["des"] +
+            "</div></div></div></td></tr>";
+        }
           var c = document.getElementById("a3");
           // console.log(c);
           c.innerHTML = b;
@@ -468,17 +450,15 @@ var d = document.getElementById("list").innerText = a[0]["type"];
           let a = this.events;
           let b = "";
           for (let i = 0; i < a.length; i++) {
-            b +=
-              "<tr><td><div class='row flex-column flex-md-row'><div class='col'>" +
-              a[i]["type"] +
-              "</div><div class='col'><img src='http://220.128.133.15/s1080214/project/CWL_T/upload/" +
-              a[i]["pic"] +
-              "'/></div><div class='col'>" +
-              a[i]["name"] +
-              "</div><div class='col'>" +
-              a[i]["des"] +
-              "</div></div></td></tr>";
-          }
+                      b +=
+            "<tr><td><div class='container row m-0 p-0 flex-column flex-md-row' style='border:0.5px solid #dedede;'><div class='col-md-7'><img src='http://220.128.133.15/s1080214/project/CWL_T/upload/" +
+            a[i]["pic"] +
+            "'/></div><div class='col-md-5 p-3' style='box-shadow:-1px 1px 5px #ddd'><div class='col mb-3 text-right' style='font-size:2.5vh; color:#000;'>" +
+            a[i]["name"] +
+            "<hr style='border:0;height: 1.2px;background-image: linear-gradient(to right, transparent, #7C7B79, transparent)'/></div><div class='col text-left'>" +
+            a[i]["des"] +
+            "</div></div></div></td></tr>";
+        }
           var c = document.getElementById("a3");
           // console.log(c);
           c.innerHTML = b;
@@ -494,17 +474,15 @@ var d = document.getElementById("list").innerText = a[0]["type"];
           let a = this.events;
           let b = "";
           for (let i = 0; i < a.length; i++) {
-            b +=
-              "<tr><td><div class='row flex-column flex-md-row'><div class='col'>" +
-              a[i]["type"] +
-              "</div><div class='col'><img src='http://220.128.133.15/s1080214/project/CWL_T/upload/" +
-              a[i]["pic"] +
-              "'/></div><div class='col'>" +
-              a[i]["name"] +
-              "</div><div class='col'>" +
-              a[i]["des"] +
-              "</div></div></td></tr>";
-          }
+                      b +=
+            "<tr><td><div class='container row m-0 p-0 flex-column flex-md-row' style='border:0.5px solid #dedede;'><div class='col-md-7'><img src='http://220.128.133.15/s1080214/project/CWL_T/upload/" +
+            a[i]["pic"] +
+            "'/></div><div class='col-md-5 p-3' style='box-shadow:-1px 1px 5px #ddd'><div class='col mb-3 text-right' style='font-size:2.5vh; color:#000;'>" +
+            a[i]["name"] +
+            "<hr style='border:0;height: 1.2px;background-image: linear-gradient(to right, transparent, #7C7B79, transparent)'/></div><div class='col text-left'>" +
+            a[i]["des"] +
+            "</div></div></div></td></tr>";
+        }
           var c = document.getElementById("a3");
           // console.log(c);
           c.innerHTML = b;

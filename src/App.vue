@@ -14,7 +14,7 @@
   </div>
 </template>
 
-<style>
+<style secoped>
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -43,9 +43,9 @@ table {
   margin-top: 50px;
 }
 table td {
-  border-bottom: 1px solid rgb(165, 165, 165);
-  padding-top: 50px;
-  padding-bottom: 20px;
+  /* border-bottom: 1px solid rgb(165, 165, 165); */
+  /* padding-top: 50px; */
+  padding-bottom: 30px;
   text-align: center;
 }
 

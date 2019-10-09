@@ -108,23 +108,6 @@ filter:invert(1);
 #light {
   font-family: "Noto Sans TC", sans-serif;
 }
-#ltitle {
-  border:1px solid #000;
-  color: #ebebeb;
-  padding: 10px;
-  text-align: center;
-  position:relative;
-}
-#ltitle::before{
-  content:'';
-  position:absolute;
-  height:100%;
-  width:100%;
-  background: #7d7c85;
-  top:-10px;
-  left:10px;
-  z-index:-1;
-}
 #list{
   border:1px solid #000;
   color: #2D354B;
@@ -147,15 +130,16 @@ background:#3ACEDD
 ;
 z-index:-1
 }
-#navbar{
-box-shadow:0 0 0 #fff;
-}
 .font{
     font-weight:bolder;
     font-family: "Noto Sans TC", sans-serif;
 }
 h1{
     font-family: "Noto Sans TC", sans-serif;
+}
+.name{
+  font-size:2vh;
+  color:#3ACEDD;
 }
 </style>
 <script>
@@ -200,11 +184,11 @@ let item = [
         let b = "";
         for (let i = 0; i < a.length; i++) {
           b +=
-            "<tr><td><div class='row flex-column flex-md-row'><div class='col-md-7'><img src='http://220.128.133.15/s1080214/project/CWL_T/upload/" +
+            "<tr><td><div class='container row m-0 p-0 flex-column flex-md-row' style='border:0.5px solid #dedede;'><div class='col-md-7'><img src='http://220.128.133.15/s1080214/project/CWL_T/upload/" +
             a[i]["pic"] +
-            "'/></div><div class='col-md-5 bg-light'><div class='col mb-3 bg-secondary'>" +
+            "'/></div><div class='col-md-5 p-3' style='box-shadow:-1px 1px 5px #ddd'><div class='col mb-3 text-right' style='font-size:2.5vh; color:#000;'>" +
             a[i]["name"] +
-            "</div><div class='col bg-secondary'>" +
+            "<hr style='border:0;height: 1.2px;background-image: linear-gradient(to right, transparent, #7C7B79, transparent)'/></div><div class='col text-left'>" +
             a[i]["des"] +
             "</div></div></div></td></tr>";
         }
@@ -213,319 +197,5 @@ let item = [
         c.innerHTML = b;
       });
   },
-  methods: {
-    all: function() {
-      this.axios
-        .get("http://220.128.133.15/s1080214/project/axios.php?do=0")
-        .then(response => {
-          this.events = response.data;
-          // console.log(response.data);
-          let a = this.events;
-          let b = "";
-          for (let i = 0; i < a.length; i++) {
-            b +=
-              "<tr><td><div class='row flex-column flex-md-row'><div class='col'>" +
-              a[i]["type"] +
-              "</div><div class='col'><img src='http://220.128.133.15/s1080214/project/CWL_T/upload/" +
-              a[i]["pic"] +
-              "'/></div><div class='col'>" +
-              a[i]["name"] +
-              "</div><div class='col'>" +
-              a[i]["des"] +
-              "</div></div></td></tr>";
-          }
-          var c = document.getElementById("a3");
-          // console.log(c);
-          c.innerHTML = b;
-          document.getElementById("list").innerText = "全部光源商品"
-        });
-    },
-    P1: function() {
-      this.axios
-        .get("http://220.128.133.15/s1080214/project/axios.php?do=1")
-        .then(response => {
-          this.events = response.data;
-          // console.log(response.data);
-          let a = this.events;
-          let b = "";
-          for (let i = 0; i < a.length; i++) {
-            b +=
-              "<tr><td><div class='row flex-column flex-md-row'><div class='col'>" +
-              a[i]["type"] +
-              "</div><div class='col'><img src='http://220.128.133.15/s1080214/project/CWL_T/upload/" +
-              a[i]["pic"] +
-              "'/></div><div class='col'>" +
-              a[i]["name"] +
-              "</div><div class='col'>" +
-              a[i]["des"] +
-              "</div></div></td></tr>";
-          }
-          var c = document.getElementById("a3");
-          // console.log(c);
-          c.innerHTML = b;
-          var d = document.getElementById("list").innerText = a[0]["type"];
-        });
-    },
-    P2: function() {
-      this.axios
-        .get("http://220.128.133.15/s1080214/project/axios.php?do=2")
-        .then(response => {
-          this.events = response.data;
-          // console.log(response.data);
-          let a = this.events;
-          let b = "";
-          for (let i = 0; i < a.length; i++) {
-            b +=
-              "<tr><td><div class='row flex-column flex-md-row'><div class='col'>" +
-              a[i]["type"] +
-              "</div><div class='col'><img src='http://220.128.133.15/s1080214/project/CWL_T/upload/" +
-              a[i]["pic"] +
-              "'/></div><div class='col'>" +
-              a[i]["name"] +
-              "</div><div class='col'>" +
-              a[i]["des"] +
-              "</div></div></td></tr>";
-          }
-          var c = document.getElementById("a3");
-          // console.log(c);
-          c.innerHTML = b;
-          var d = document.getElementById("list").innerText = a[0]["type"];
-        });
-    },
-    P3: function() {
-      this.axios
-        .get("http://220.128.133.15/s1080214/project/axios.php?do=3")
-        .then(response => {
-          this.events = response.data;
-          // console.log(response.data);
-          let a = this.events;
-          let b = "";
-          for (let i = 0; i < a.length; i++) {
-            b +=
-              "<tr><td><div class='row flex-column flex-md-row'><div class='col'>" +
-              a[i]["type"] +
-              "</div><div class='col'><img src='http://220.128.133.15/s1080214/project/CWL_T/upload/" +
-              a[i]["pic"] +
-              "'/></div><div class='col'>" +
-              a[i]["name"] +
-              "</div><div class='col'>" +
-              a[i]["des"] +
-              "</div></div></td></tr>";
-          }
-          var c = document.getElementById("a3");
-          // console.log(c);
-          c.innerHTML = b;
-var d = document.getElementById("list").innerText = a[0]["type"];
-        });
-    },
-    P4: function() {
-      this.axios
-        .get("http://220.128.133.15/s1080214/project/axios.php?do=4")
-        .then(response => {
-          this.events = response.data;
-          // console.log(response.data);
-          let a = this.events;
-          let b = "";
-          for (let i = 0; i < a.length; i++) {
-            b +=
-              "<tr><td><div class='row flex-column flex-md-row'><div class='col'>" +
-              a[i]["type"] +
-              "</div><div class='col'><img src='http://220.128.133.15/s1080214/project/CWL_T/upload/" +
-              a[i]["pic"] +
-              "'/></div><div class='col'>" +
-              a[i]["name"] +
-              "</div><div class='col'>" +
-              a[i]["des"] +
-              "</div></div></td></tr>";
-          }
-          var c = document.getElementById("a3");
-          // console.log(c);
-          c.innerHTML = b;
- var d = document.getElementById("list").innerText = a[0]["type"];
-        });
-    },
-    P5: function() {
-      this.axios
-        .get("http://220.128.133.15/s1080214/project/axios.php?do=5")
-        .then(response => {
-          this.events = response.data;
-          // console.log(response.data);
-          let a = this.events;
-          let b = "";
-          for (let i = 0; i < a.length; i++) {
-            b +=
-              "<tr><td><div class='row flex-column flex-md-row'><div class='col'>" +
-              a[i]["type"] +
-              "</div><div class='col'><img src='http://220.128.133.15/s1080214/project/CWL_T/upload/" +
-              a[i]["pic"] +
-              "'/></div><div class='col'>" +
-              a[i]["name"] +
-              "</div><div class='col'>" +
-              a[i]["des"] +
-              "</div></div></td></tr>";
-          }
-          var c = document.getElementById("a3");
-          // console.log(c);
-          c.innerHTML = b;
-var d = document.getElementById("list").innerText = a[0]["type"];
-        });
-    },
-    P6: function() {
-      this.axios
-        .get("http://220.128.133.15/s1080214/project/axios.php?do=6")
-        .then(response => {
-          this.events = response.data;
-          // console.log(response.data);
-          let a = this.events;
-          let b = "";
-          for (let i = 0; i < a.length; i++) {
-            b +=
-              "<tr><td><div class='row flex-column flex-md-row'><div class='col'>" +
-              a[i]["type"] +
-              "</div><div class='col'><img src='http://220.128.133.15/s1080214/project/CWL_T/upload/" +
-              a[i]["pic"] +
-              "'/></div><div class='col'>" +
-              a[i]["name"] +
-              "</div><div class='col'>" +
-              a[i]["des"] +
-              "</div></div></td></tr>";
-          }
-          var c = document.getElementById("a3");
-          // console.log(c);
-          c.innerHTML = b;
-var d = document.getElementById("list").innerText = a[0]["type"];
-        });
-    },
-    P7: function() {
-      this.axios
-        .get("http://220.128.133.15/s1080214/project/axios.php?do=7")
-        .then(response => {
-          this.events = response.data;
-          // console.log(response.data);
-          let a = this.events;
-          let b = "";
-          for (let i = 0; i < a.length; i++) {
-            b +=
-              "<tr><td><div class='row flex-column flex-md-row'><div class='col'>" +
-              a[i]["type"] +
-              "</div><div class='col'><img src='http://220.128.133.15/s1080214/project/CWL_T/upload/" +
-              a[i]["pic"] +
-              "'/></div><div class='col'>" +
-              a[i]["name"] +
-              "</div><div class='col'>" +
-              a[i]["des"] +
-              "</div></div></td></tr>";
-          }
-          var c = document.getElementById("a3");
-          // console.log(c);
-          c.innerHTML = b;
-var d = document.getElementById("list").innerText = a[0]["type"];
-        });
-    },
-    P8: function() {
-      this.axios
-        .get("http://220.128.133.15/s1080214/project/axios.php?do=8")
-        .then(response => {
-          this.events = response.data;
-          // console.log(response.data);
-          let a = this.events;
-          let b = "";
-          for (let i = 0; i < a.length; i++) {
-            b +=
-              "<tr><td><div class='row flex-column flex-md-row'><div class='col'>" +
-              a[i]["type"] +
-              "</div><div class='col'><img src='http://220.128.133.15/s1080214/project/CWL_T/upload/" +
-              a[i]["pic"] +
-              "'/></div><div class='col'>" +
-              a[i]["name"] +
-              "</div><div class='col'>" +
-              a[i]["des"] +
-              "</div></div></td></tr>";
-          }
-          var c = document.getElementById("a3");
-          // console.log(c);
-          c.innerHTML = b;
-var d = document.getElementById("list").innerText = a[0]["type"];
-        });
-    },
-    P9: function() {
-      this.axios
-        .get("http://220.128.133.15/s1080214/project/axios.php?do=9")
-        .then(response => {
-          this.events = response.data;
-          // console.log(response.data);
-          let a = this.events;
-          let b = "";
-          for (let i = 0; i < a.length; i++) {
-            b +=
-              "<tr><td><div class='row flex-column flex-md-row'><div class='col'>" +
-              a[i]["type"] +
-              "</div><div class='col'><img src='http://220.128.133.15/s1080214/project/CWL_T/upload/" +
-              a[i]["pic"] +
-              "'/></div><div class='col'>" +
-              a[i]["name"] +
-              "</div><div class='col'>" +
-              a[i]["des"] +
-              "</div></div></td></tr>";
-          }
-          var c = document.getElementById("a3");
-          // console.log(c);
-          c.innerHTML = b;
-var d = document.getElementById("list").innerText = a[0]["type"];
-        });
-    },
-    P10: function() {
-      this.axios
-        .get("http://220.128.133.15/s1080214/project/axios.php?do=10")
-        .then(response => {
-          this.events = response.data;
-          // console.log(response.data);
-          let a = this.events;
-          let b = "";
-          for (let i = 0; i < a.length; i++) {
-            b +=
-              "<tr><td><div class='row flex-column flex-md-row'><div class='col'>" +
-              a[i]["type"] +
-              "</div><div class='col'><img src='http://220.128.133.15/s1080214/project/CWL_T/upload/" +
-              a[i]["pic"] +
-              "'/></div><div class='col'>" +
-              a[i]["name"] +
-              "</div><div class='col'>" +
-              a[i]["des"] +
-              "</div></div></td></tr>";
-          }
-          var c = document.getElementById("a3");
-          // console.log(c);
-          c.innerHTML = b;
-var d = document.getElementById("list").innerText = a[0]["type"];
-        });
-    },
-    P11: function() {
-      this.axios
-        .get("http://220.128.133.15/s1080214/project/axios.php?do=11")
-        .then(response => {
-          this.events = response.data;
-          // console.log(response.data);
-          let a = this.events;
-          let b = "";
-          for (let i = 0; i < a.length; i++) {
-            b +=
-              "<tr><td><div class='row flex-column flex-md-row'><div class='col'>" +
-              a[i]["type"] +
-              "</div><div class='col'><img src='http://220.128.133.15/s1080214/project/CWL_T/upload/" +
-              a[i]["pic"] +
-              "'/></div><div class='col'>" +
-              a[i]["name"] +
-              "</div><div class='col'>" +
-              a[i]["des"] +
-              "</div></div></td></tr>";
-          }
-          var c = document.getElementById("a3");
-          // console.log(c);
-          c.innerHTML = b;
-var d = document.getElementById("list").innerText = a[0]["type"];
-        });
-    }
-  }
 };
 </script>
