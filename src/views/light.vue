@@ -186,11 +186,11 @@ let item = [
           b +=
             "<tr><td><div class='container row m-0 p-0 flex-column flex-md-row' style='border:0.5px solid #dedede;'><div class='col-md-7'><img src='http://220.128.133.15/s1080214/project/CWL_T/upload/" +
             a[i]["pic"] +
-            "'/></div><div class='col-md-5 p-3' style='box-shadow:-1px 1px 5px #ddd'><div class='col mb-3 text-right' style='font-size:2.5vh; color:#000;'>" +
+            "'/></div><div class='col-md-5 p-3'><div class='col mb-3 text-right' style='font-size:3vh; color:#000;'>" +
             a[i]["name"] +
-            "<hr style='border:0;height: 1.2px;background-image: linear-gradient(to right, transparent, #7C7B79, transparent)'/></div><div class='col text-left'>" +
+            "<hr style='border:0;height: 1.2px;background-image: linear-gradient(to right, transparent, #7C7B79, transparent)'/></div><div class='col text-left'><pre style='font-size:2.2vh;font-family:微軟正黑體;font-weight:bolder;color:#666'>" +
             a[i]["des"] +
-            "</div></div></div></td></tr>";
+            "</pre></div></div></div></td></tr>";
         }
         var c = document.getElementById("a3");
         // console.log(c);
